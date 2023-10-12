@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcountActivity">
+    <LinearLayout
+        android:id="@+id/consBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#76a5dd"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/consText"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="300dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_back"
+                android:gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="359dp"
+                android:layout_height="match_parent"
+                android:text="ACOUNT"
+                android:textColor="#ffffff"
+                android:textSize="32dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="20dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/consInfAcount"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round4corner_border"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/consAvt_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/round2corner_top"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/avt"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/avt" />
+
+                <ImageView
+                    android:id="@+id/id_ic_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="40dp"
+                    android:src="@drawable/ic_edit_basic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inf"
+                android:layout_width="match_parent"
+                android:layout_height="491dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Name"
+                    android:textColor="#3D3C3C"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round4corner_border"
+                    android:hint="Nguyen Van A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Birthday"
+                    android:textColor="#3D3C3C"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/textBir"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round4corner_border"
+                    android:hint="06/01/2003" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

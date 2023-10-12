@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="59dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/seach"
+        android:layout_width="303dp"
+        android:layout_height="53dp"
+        android:background="@drawable/seach"
+        android:paddingLeft="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/seach"
+        app:layout_constraintEnd_toEndOf="@+id/seach"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/seach"
+        app:layout_constraintTop_toTopOf="@+id/seach"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="413dp"
+        android:layout_height="614dp"
+        android:background="@drawable/main_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KHO SẢN PHẨM"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        tools:layout_editor_absoluteX="68dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textSearch"
+        android:layout_width="199dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="60dp"
+
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="@+id/seach"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="66dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
