@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Circle -->
+    <item>
+        <shape
+            android:shape="oval"
+            >
+            <solid android:color="#D3D3D3" /> <!-- Màu nền của hình tròn -->
+            <corners android:radius="150dp"/>
+        </shape>
+    </item>
+    <!-- Avatar Image -->
+    <item android:drawable="@drawable/avt_account" /> <!-- Thay "your_avatar_image" bằng tên tệp ảnh AVT của bạn -->
+</layer-list>

@@ -1,4 +1,4 @@
 package com.example.appmanager;
 
-public class MainActivity {
+public class EditAcountActivity {
 }

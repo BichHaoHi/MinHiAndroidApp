@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Home"
+    android:background="@color/color_background"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main">
+
+
+        <ImageView
+            android:id="@+id/imgAvt"
+            android:layout_width="91dp"
+            android:layout_height="90dp"
+            android:background="@color/color_background"
+            android:src="@drawable/avt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/f1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/shape_function"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="246dp"
+            android:layout_height="41dp"
+            android:fontFamily="@font/roboto_main"
+            android:text="Bich Hao"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toEndOf="@+id/imgAvt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/f2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/shape_function"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/f3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/shape_function"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/texxF1"
+            android:layout_width="102dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textF2"
+            android:layout_width="91dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/texxF1"
+            app:layout_constraintTop_toBottomOf="@+id/f2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textF3"
+            android:layout_width="97dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/textF2"
+            app:layout_constraintTop_toBottomOf="@+id/f3"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="414dp"
+            android:layout_height="448dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/main_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ListView
+
+                android:id="@+id/listViewNoticeHome"
+                android:layout_width="321dp"
+                android:layout_height="330dp"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
