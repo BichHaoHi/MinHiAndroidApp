@@ -21,10 +21,7 @@ public class NoticeActivity extends AppCompatActivity {
 
         ListView listViewNotice = (ListView)findViewById(R.id.listViewNotice);
 //3. Tạo ra đối tượng chứa thông tin data cần đổ vào,LÀ KIỂU MẢNG,có thể lấy từ database qua các câu lệnh truy vấn
-        ArrayList<String> noticeArr = new ArrayList<>();
-        noticeArr.add("Tb1");
-        noticeArr.add("Tb2");
-        noticeArr.add("Tb3");
+        ArrayList<Tbao> noticeArr = new ArrayList<Tbao>();
 
         //3.1.Cho đối tượng có thiết kế layout con
         NoticeCusActivity adapterNotice = new NoticeCusActivity(noticeArr, getApplicationContext());

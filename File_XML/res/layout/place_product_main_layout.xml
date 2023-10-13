@@ -8,29 +8,32 @@
 
     <ImageView
         android:id="@+id/back"
-        android:layout_width="59dp"
-        android:layout_height="72dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
         android:src="@drawable/ic_back"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.034"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/seach"
-        android:layout_width="303dp"
-        android:layout_height="53dp"
+        android:layout_width="299dp"
+        android:layout_height="47dp"
         android:background="@drawable/seach"
         android:paddingLeft="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="68dp" />
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textKho"
+        app:layout_constraintVertical_bias="0.731"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ic_search"
         android:layout_width="29dp"
         android:layout_height="27dp"
         android:src="@drawable/ic_search"
@@ -44,39 +47,42 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="413dp"
-        android:layout_height="614dp"
+        android:layout_width="match_parent"
+        android:layout_height="588dp"
+        android:layout_marginTop="144dp"
+
         android:background="@drawable/main_edit"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textKho"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KHO SẢN PHẨM"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036"
-        tools:layout_editor_absoluteX="68dp"
+        android:id="@+id/textSearch"
+        android:layout_width="218dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="@+id/seach"
+        app:layout_constraintEnd_toEndOf="@+id/seach"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textSearch"
-        android:layout_width="199dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="60dp"
-
-        android:text="Search"
-        app:layout_constraintEnd_toEndOf="@+id/seach"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="66dp" />
+        android:id="@+id/textKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
+        android:text="KHO SẢN PHẨM"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/seach"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

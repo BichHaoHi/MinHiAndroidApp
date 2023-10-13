@@ -28,6 +28,12 @@ public class MainFragmentActivity extends AppCompatActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnHome.setImageResource(R.drawable.ic_home_run);
+                btnReport.setImageResource(R.drawable.ic_report_non);
+                btnNotice.setImageResource(R.drawable.ic_notice_non);
+                btnSetting.setImageResource(R.drawable.ic_setting_non);
+
+
                 loadFragment(new Fragment_Home());
             }
         });
@@ -35,6 +41,11 @@ public class MainFragmentActivity extends AppCompatActivity {
         btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnReport.setImageResource(R.drawable.ic_report_run);
+                btnHome.setImageResource(R.drawable.ic_home_non);
+                btnNotice.setImageResource(R.drawable.ic_notice_non);
+                btnSetting.setImageResource(R.drawable.ic_setting_non);
+
                 loadFragment(new Fragment_Report());
             }
         });
@@ -42,6 +53,11 @@ public class MainFragmentActivity extends AppCompatActivity {
         btnNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnNotice.setImageResource(R.drawable.ic_notice_run);
+                btnReport.setImageResource(R.drawable.ic_report_non);
+                btnHome.setImageResource(R.drawable.ic_home_non);
+                btnSetting.setImageResource(R.drawable.ic_setting_non);
+
                 loadFragment(new Fragment_Notice());
             }
         });
@@ -49,6 +65,11 @@ public class MainFragmentActivity extends AppCompatActivity {
         btnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnSetting.setImageResource(R.drawable.ic_setting_run);
+                btnReport.setImageResource(R.drawable.ic_report_non);
+                btnNotice.setImageResource(R.drawable.ic_notice_non);
+                btnHome.setImageResource(R.drawable.ic_home_non);
+
                 loadFragment(new Fragment_Setting());
             }
         });
