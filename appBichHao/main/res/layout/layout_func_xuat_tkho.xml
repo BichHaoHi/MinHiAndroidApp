@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActiFunc_Xuat_TKho"
+        android:background="#76a5dd"
+        tools:ignore="MissingDefaultResource">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consText"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/back_home"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_back"
+                android:gravity="center_vertical|center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textNhap"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.133" />
+
+            <TextView
+                android:id="@+id/textNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Tạo phiếu xuất hàng"
+                android:textColor="#ffffff"
+                android:textSize="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.669"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.156" />
+
+            <ImageView
+                android:id="@+id/seach"
+                android:layout_width="299dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/seach"
+                android:paddingLeft="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNhap"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <ImageView
+                android:id="@+id/ic_search"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/seach"
+                app:layout_constraintEnd_toEndOf="@+id/seach"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="@+id/seach"
+                app:layout_constraintTop_toTopOf="@+id/seach"
+                app:layout_constraintVertical_bias="0.423"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/func_search"
+                android:layout_width="218dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Search"
+                app:layout_constraintBottom_toBottomOf="@+id/seach"
+                app:layout_constraintEnd_toEndOf="@+id/seach"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consInfPXuat"
+            android:layout_width="413dp"
+            android:layout_height="575dp"
+            android:background="@drawable/round4corner_border"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consText"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ListView
+                android:id="@+id/listViewPX"
+                android:layout_width="382dp"
+                android:layout_height="381dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_add_px"
+                android:layout_width="186dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="60dp"
+                android:backgroundTint="@color/color_button"
+                android:text="Thêm phiếu xuất"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/_dynamic"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints,UnknownId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
