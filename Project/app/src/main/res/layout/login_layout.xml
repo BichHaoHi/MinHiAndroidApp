@@ -77,8 +77,8 @@
             />
 
         <!-- TextView cho quên mật khẩu -->
-        <TextView
-            android:id="@+id/txtForgetPass"
+        <Button
+            android:id="@+id/btnForgetPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forget password!"
