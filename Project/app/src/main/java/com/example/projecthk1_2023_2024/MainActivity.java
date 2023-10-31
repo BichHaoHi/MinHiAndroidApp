@@ -7,15 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.projecthk1_2023_2024.Util.AuUser;
-import com.example.projecthk1_2023_2024.Util.NVKhoActivity;
-import com.example.projecthk1_2023_2024.model.User;
+import com.example.projecthk1_2023_2024.admin.AdminActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -92,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                                                     auUser.setUserId(snapshot.getString("loginId"));
                                                     auUser.setUsername(snapshot.getString("Name"));
                                                     if (role == "Admin") {
-                                                        startActivity(new Intent(MainActivity.this,AdminActivity.class));
+                                                        startActivity(new Intent(MainActivity.this, AdminActivity.class));
                                                     } else {
                                                         startActivity(new Intent(MainActivity.this, NVKhoActivity.class));
                                                     }
