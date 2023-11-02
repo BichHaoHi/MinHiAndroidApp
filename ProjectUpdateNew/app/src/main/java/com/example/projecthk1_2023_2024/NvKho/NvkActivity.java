@@ -1,17 +1,22 @@
-package com.example.projecthk1_2023_2024;
+package com.example.projecthk1_2023_2024.NvKho;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projecthk1_2023_2024.R;
 
-public class NVKhoActivity extends AppCompatActivity {
+public class NvkActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_home);
+        setContentView(R.layout.nvkho_frag_main);
+
+        Intent i = new Intent(this, NvkFragMain.class);
+        startActivity(i);
+
+
     }
 }
