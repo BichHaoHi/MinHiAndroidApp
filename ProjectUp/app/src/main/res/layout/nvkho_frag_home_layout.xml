@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="account"
+            type="com.example.projecthk1_2023_2024.model.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_frag_child"
+            android:layout_width="406dp"
+            android:layout_height="705dp"
+            android:background="#F2F1F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#719AE4"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgAvt"
+                        android:layout_width="67dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.357"
+                        app:srcCompat="@drawable/vit" />
+
+                    <TextView
+                        android:id="@+id/nameAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@{account.name}"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgAvt"
+                        app:layout_constraintStart_toEndOf="@+id/imgAvt"
+                        app:layout_constraintTop_toTopOf="@+id/imgAvt" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:id="@+id/func_qlNhap"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/stroke_button"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/func_viTriSP">
+
+                            <ImageButton
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="24.5dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/white"
+                                android:contentDescription="Nhập hàng"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/nhaphang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:text="Nhập hàng"
+                                android:textColor="#578AE6"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/func_qlXuat"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="60dp"
+                            android:background="@drawable/stroke_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/func_qlsp">
+
+                            <ImageButton
+                                android:layout_width="54dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="24.5dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/white"
+                                android:contentDescription="Xuất hàng"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/xuathang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:text="Xuất hàng"
+                                android:textColor="#578AE6"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/func_viTriSP"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginStart="60dp"
+                            android:background="@drawable/stroke_button"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageButton
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="24.5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/white"
+                                android:contentDescription="Nhân Sự"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_func_place" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:gravity="center"
+                                android:text="Vị trí sản phẩm"
+                                android:textColor="#578AE6"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/func_qlsp"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginEnd="60dp"
+                            android:background="@drawable/stroke_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageButton
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24.5dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/white"
+                                android:contentDescription="Sản phẩm"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/box" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:text="Sản phẩm"
+                                android:textColor="#578AE6"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="398dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="42dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cons_frag_child"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="392dp"
+                    android:layout_height="320dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

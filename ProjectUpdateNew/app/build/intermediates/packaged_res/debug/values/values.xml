@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#60A1EF</color>
+    <color name="black">#FF000000</color>
+    <color name="color_brighter">#ffffff</color>
+    <color name="color_button">#254c7b</color>
+    <color name="color_main"> #76A0DD </color>
+    <color name="color_notice">#e5f4ff</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ProjectHK1_2023-2024</string>
+    <string name="gcm_defaultSenderId" translatable="false">471944805478</string>
+    <string name="google_api_key" translatable="false">AIzaSyDZ3gw1WWJr0yQAnfml9XJxq78qspqgkq4</string>
+    <string name="google_app_id" translatable="false">1:471944805478:android:7511798148ea69847641a7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDZ3gw1WWJr0yQAnfml9XJxq78qspqgkq4</string>
+    <string name="google_storage_bucket" translatable="false">projectandroid-cbf37.appspot.com</string>
+    <string name="project_id" translatable="false">projectandroid-cbf37</string>
+    <style name="Base.Theme.ProjectHK1_20232024" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ProjectHK1_20232024" parent="Base.Theme.ProjectHK1_20232024"/>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectHK1_20232024"
+        tools:targetApi="31">
+        <activity
+            android:name=".NvKho.NvkActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NvKho.NvkFragMain"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.AcountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.EditAcountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.FuncPlace.Func_PlaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Func_qlNhapHang"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Func_qlXuatHang"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragHome"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragNotice"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.NvkFragReport"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragSetting"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_PN"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_PX"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_SP"
+            android:exported="true" />
+    </application>
+
+</manifest>

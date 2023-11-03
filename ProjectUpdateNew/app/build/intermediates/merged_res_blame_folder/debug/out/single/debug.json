@@ -1,0 +1,526 @@
+[
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_app.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_store.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\store.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_frag_report_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_report_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f1_1_select_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_1_select_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_menu.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f1_2_add_product_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_2_add_product_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_bottom_appbar.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\bottom_appbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f1_1_select_item_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_1_select_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_forget_pass_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\forget_pass_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report1_nhap_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report1_nhap_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_ls.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_ls.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_nhap.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_nhap.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f1_2_addpr_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_2_addpr_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_item_view_sanpham.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\item_view_sanpham.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_recycleview.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\recycleview.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func2_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func2_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_user_1.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\user_1.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_edit_basic.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_edit_basic.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_background_notification.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\background_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_viewholder_notification.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\viewholder_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_seach.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\seach.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_taikhoan.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\taikhoan.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_avt_account.jpg.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\avt_account.jpg"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_chuong.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\chuong.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_fragment_border.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\fragment_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_account.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\account.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_login_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\login_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_main_edit.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\main_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_xuat.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_xuat.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f2_1_detail_px_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f2_1_detail_px_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_dangxuat.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\dangxuat.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report1_nhap_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report1_nhap_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_fragment_nuttinhnang.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\fragment_nuttinhnang.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_edit_account_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\edit_account_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_report.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_report.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_frag_seting_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_seting_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_add.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\add.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func3_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func3_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round4corner_border.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round4corner_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_img_1.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\img_1.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_qlsp.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_qlsp.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func3_qlnhapkho_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func3_qlnhapkho_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f3_1_detail_pn_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f3_1_detail_pn_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f3_1_detail_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f3_1_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func4_qlsp_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func4_qlsp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round2corner_top.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round2corner_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_clock.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\clock.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func4_qlsp_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func4_qlsp_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func1_item_khu.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func1_item_khu.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_func_place.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_func_place.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_f2_1_detail_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f2_1_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_bottom_btn1.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\bottom_btn1.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_button_bottom.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\button_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_background.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_button.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\button.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round4_boxnotice.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round4_boxnotice.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_menu.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_shape_title_tk.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\shape_title_tk.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func1_qlsp_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func1_qlsp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_bell_run.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_bell_run.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_home.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_group_person.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\group_person.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_frag_home_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_home_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_search_background.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\search_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_box.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\box.png"
+    },
+    {
+        "merged": "com.example.projecthk1_2023_2024.app-merged_res-41:/layout_nvkho_frag_main.xml.flat",
+        "source": "com.example.projecthk1_2023_2024.app-main-43:/layout/nvkho_frag_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_avt.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\avt.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_stroke_button.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\stroke_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_account_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\account_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round_4corner.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round_4corner.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_detail.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_bell.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_bell.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report3_tksp_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report3_tksp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_vien.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\vien.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_vit.jpg.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\vit.jpg"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_nhap_xuat.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_nhap_xuat.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_report.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\report.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_sanpham.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\sanpham.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_setting_non.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_setting_non.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_back.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_item_view_nhanvien.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\item_view_nhanvien.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report3_qlsp_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report3_qlsp_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_shape_tk_total.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\shape_tk_total.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_admin_home.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\admin_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_func2_qlxkho_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func2_qlxkho_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round_corner_blr.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round_corner_blr.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_logout.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\logout.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_notice_box.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\notice_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_btn_plus.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\btn_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_setting_run.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_setting_run.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_place.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_place.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report2_xuat_item.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report2_xuat_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_search.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_menu_run.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_menu_run.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_home_run.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_home_run.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nhan_vien.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nhan_vien.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_frag_main.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_stroke_cardview.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\stroke_cardview.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_nvkho_report2_xuat_layout.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report2_xuat_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_nhaphang.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\nhaphang.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_report_run.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_report_run.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_list.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_round_corner_bl.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\round_corner_bl.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_xuathang.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\xuathang.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_shape_function.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\shape_function.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_thong_ke.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\thong_ke.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_scan.png.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_scan.png"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_straight.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\straight.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\layout_notification.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_border_phieu.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\border_phieu.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-merged_res-41:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\drawable\\ic_launcher_foreground.xml"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f1_1_select_item_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_1_select_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\notification.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_frag_report_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_report_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report1_nhap_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report1_nhap_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\admin_home.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\admin_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f1_2_add_product_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_2_add_product_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report3_qlsp_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report3_qlsp_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\edit_account_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\edit_account_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\notice_box.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\notice_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nhan_vien.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nhan_vien.xml"
+    },
+    {
+        "merged": "com.example.projecthk1_2023_2024.app-mergeDebugResources-40:/layout/nvkho_frag_main.xml",
+        "source": "com.example.projecthk1_2023_2024.app-main-43:/layout/nvkho_frag_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_frag_main.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func2_qlxkho_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func2_qlxkho_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\fragment_nuttinhnang.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\fragment_nuttinhnang.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\forget_pass_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\forget_pass_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_frag_home_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_home_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func3_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func3_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_frag_seting_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_frag_seting_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\login_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\login_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func1_qlsp_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func1_qlsp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report2_xuat_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report2_xuat_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func2_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func2_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func4_qlsp_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func4_qlsp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report1_nhap_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report1_nhap_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f2_1_detail_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f2_1_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f3_1_detail_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f3_1_detail_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\item_view_sanpham.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\item_view_sanpham.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\sanpham.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\sanpham.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\account_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\account_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report3_tksp_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report3_tksp_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func4_qlsp_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func4_qlsp_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f2_1_detail_px_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f2_1_detail_px_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f1_1_select_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_1_select_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\item_view_nhanvien.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\item_view_nhanvien.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\viewholder_notification.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\viewholder_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func3_qlnhapkho_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func3_qlnhapkho_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_report2_xuat_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_report2_xuat_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_func1_item_khu.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_func1_item_khu.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f1_2_addpr_item.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f1_2_addpr_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-mergeDebugResources-40:\\layout\\nvkho_f3_1_detail_pn_layout.xml",
+        "source": "C:\\Users\\nguye_b1apmci\\.gradle\\daemon\\8.0\\com.example.projecthk1_2023_2024.app-main-43:\\layout\\nvkho_f3_1_detail_pn_layout.xml"
+    }
+]
