@@ -19,7 +19,11 @@
         <activity android:name=".admin.AdminActivity"
             android:exported="false"/>
         <activity
+<<<<<<< HEAD:Project/app/src/main/AndroidManifest.xml
             android:name=".MainActivity"
+=======
+            android:name=".NvKho.NvkActivity"
+>>>>>>> 210f9a080cdc784a4bdd672a56334dd42959e681:ProjectUpdateNew/app/src/main/AndroidManifest.xml
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +31,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".NvKho.NvkFragMain"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.AcountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.EditAcountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Func_PlaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Func_qlNhapHang"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Func_qlXuatHang"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragHome"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragNotice"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragReport"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragSetting"
+            android:exported="true" />
     </application>
 
 </manifest>
