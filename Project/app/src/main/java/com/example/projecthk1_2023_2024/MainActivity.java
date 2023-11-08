@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.projecthk1_2023_2024.NVKho.NvkActivity;
+import com.example.projecthk1_2023_2024.NvKho.NvkActivity;
 import com.example.projecthk1_2023_2024.Util.AuUser;
 import com.example.projecthk1_2023_2024.admin.AdminActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
