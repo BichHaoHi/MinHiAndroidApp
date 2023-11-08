@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_phieu"
@@ -32,7 +32,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/namePr"
+            android:id="@+id/namePr1"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="0dp"
@@ -44,7 +44,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/maLo"
+            android:id="@+id/maLo1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
@@ -52,40 +52,40 @@
             android:text="LX2345"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/namePr"
+            app:layout_constraintTop_toBottomOf="@+id/namePr1"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slTon"
+            android:id="@+id/slTon1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="60"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/maLo"
+            app:layout_constraintTop_toBottomOf="@+id/maLo1"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/hsd"
+            android:id="@+id/hsd1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="22/12/2024"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/slTon"
+            app:layout_constraintTop_toBottomOf="@+id/slTon1"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/ttXuat"
+            android:id="@+id/ttXuat1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="Đợi xuất/Bình thường"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/hsd"
+            app:layout_constraintTop_toBottomOf="@+id/hsd1"
             tools:ignore="MissingConstraints" />
 
 

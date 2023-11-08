@@ -17,7 +17,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/back_home"
+            android:id="@+id/back_home1"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="20dp"
@@ -72,7 +72,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/func_search"
+            android:id="@+id/search_qlysp"
             android:layout_width="218dp"
             android:layout_height="30dp"
             android:layout_marginEnd="40dp"
@@ -98,7 +98,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/dspxMoi"
+            android:id="@+id/recy_phieuSP_f4"
             android:layout_width="364dp"
             android:layout_height="531dp"
             app:layout_constraintBottom_toBottomOf="parent"
