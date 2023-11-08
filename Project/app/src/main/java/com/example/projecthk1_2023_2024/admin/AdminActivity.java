@@ -20,7 +20,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.MainActivity;
-import com.example.projecthk1_2023_2024.NVKhoActivity;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.AuUser;
 import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;

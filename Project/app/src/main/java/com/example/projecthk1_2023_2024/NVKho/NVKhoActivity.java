@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.NvKho;
+package com.example.projecthk1_2023_2024.NVKho;
 
 import android.content.Intent;
 import android.os.Bundle;
