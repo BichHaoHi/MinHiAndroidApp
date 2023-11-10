@@ -88,7 +88,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:orientation="horizontal"
-                android:background="@drawable/vien">
+                android:background="@drawable/vien"
+                android:id="@+id/layoutAccount">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -125,7 +126,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/dangxuat"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/layoutLogout">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

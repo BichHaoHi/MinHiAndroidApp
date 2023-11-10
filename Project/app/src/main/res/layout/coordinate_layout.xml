@@ -132,7 +132,7 @@
 
                 <ImageView
                     android:id="@+id/imageView8"
-                    android:layout_width="36dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="36dp"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
