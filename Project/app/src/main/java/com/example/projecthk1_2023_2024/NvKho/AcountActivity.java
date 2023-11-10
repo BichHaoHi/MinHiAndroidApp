@@ -28,7 +28,7 @@ public class AcountActivity extends AppCompatActivity {
             }
         });
 
-        editAcount = findViewById(R.id.edit_acount);
+        editAcount = findViewById(R.id.edit_account);
         editAcount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

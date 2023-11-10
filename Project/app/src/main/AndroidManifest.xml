@@ -20,6 +20,8 @@
             android:exported="false"/>
         <activity android:name=".admin.NotificationAdminActivity"
             android:exported="false"/>
+        <activity android:name=".admin.SettingAdminActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

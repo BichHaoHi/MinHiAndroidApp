@@ -29,7 +29,7 @@ public class SettingAdminActivity extends AppCompatActivity implements ItemClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_home);
 
-        ImageView imageView = findViewById(R.id.imageView12);
+        ImageView imageView = findViewById(R.id.imageView8);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

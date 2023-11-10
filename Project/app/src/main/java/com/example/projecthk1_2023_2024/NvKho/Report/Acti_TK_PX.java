@@ -18,7 +18,7 @@ public class Acti_TK_PX extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nvkho_report2_xuat_layout);
 
-        backR = findViewById(R.id.back_report);
+        backR = findViewById(R.id.back_home);
         backR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -137,7 +137,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/func_bc_viTri"
+                    android:id="@+id/func_tk_sp"
                     android:layout_width="367dp"
                     android:layout_height="76dp"
                     android:layout_marginTop="20dp"
