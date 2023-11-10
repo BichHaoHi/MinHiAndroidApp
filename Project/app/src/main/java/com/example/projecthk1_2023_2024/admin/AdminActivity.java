@@ -9,12 +9,14 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,8 +44,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdminActivity extends AppCompatActivity {
+    CoordinatorLayout coordinatorLayout;
     ImageView imgUser;
     TextView textView;
+    LinearLayout homebtn,reportbtn,notifibtn,settingbtn;
     FrameLayout nhanVien, nhapHang, xuatHang, product;
     RecyclerView recyclerView;
 //    AdminHomeBinding adminHomeBinding;
@@ -59,6 +63,7 @@ public class AdminActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_home);
+        coordinatorLayout = findViewById(R.id.coordinateLayout);
         nhanVien = findViewById(R.id.frameLayout1);
         nhapHang = findViewById(R.id.frameLayout3);
         xuatHang = findViewById(R.id.frameLayout4);
@@ -106,12 +111,13 @@ public class AdminActivity extends AppCompatActivity {
                             }
                         });
 
-
+        CoordinateBar.setCoordinateBar(coordinatorLayout);
+        CoordinateBar.setEventBar(getApplicationContext());
 
         nhanVien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity();
+                startActivity(new Intent(AdminActivity.this, UserAdminActivity.class));
             }
         });
         nhapHang.setOnClickListener(new View.OnClickListener() {

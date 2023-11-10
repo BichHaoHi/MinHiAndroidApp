@@ -12,9 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.projecthk1_2023_2024.NvKho.NvkActivity;
 import com.example.projecthk1_2023_2024.Util.AuUser;
 import com.example.projecthk1_2023_2024.admin.AdminActivity;
+import com.example.projecthk1_2023_2024.kho.NvkhoActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                                                     if ("Admin".equals(role)) {
                                                         startActivity(new Intent(MainActivity.this, AdminActivity.class));
                                                     } else {
-                                                        startActivity(new Intent(MainActivity.this, NvkActivity.class));
+                                                        startActivity(new Intent(MainActivity.this, NvkhoActivity.class));
                                                     }
 
                                                 }

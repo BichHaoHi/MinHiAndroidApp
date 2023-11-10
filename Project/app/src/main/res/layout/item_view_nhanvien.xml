@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginTop="10dp">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imgAccount"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginRight="10dp"
@@ -13,18 +13,19 @@
         />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/imageView10"
+        android:layout_toEndOf="@+id/imgAccount"
         android:text="Bùi Hữu Bình"
-        android:textSize="25dp"/>
+        android:maxLines="1"
+        android:textSize="23dp"/>
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/emailView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/imageView10"
-        android:layout_below="@id/textView3"
+        android:layout_toEndOf="@+id/imgAccount"
+        android:layout_below="@id/nameView"
         android:text="hihihaha@gmail.com"
         android:textSize="16dp"/>
 
@@ -32,17 +33,17 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#DAD8D8"
-        android:layout_below="@id/imageView10"
+        android:layout_below="@id/imgAccount"
         android:layout_marginTop="10dp">
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/statusView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="68dp"
-        android:layout_toRightOf="@id/textView3"
+        android:layout_toRightOf="@id/nameView"
         android:layout_marginTop="5dp"
         android:layout_weight="1"
         android:text="Đang làm việc"
