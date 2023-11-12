@@ -29,6 +29,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         this.listUser = listUser;
         this.context = context;
     }
+    public void setClickListener(ItemClick itemClick){
+        this.itemClick = itemClick;
+    }
 
     public List<Pair<String, User>> getListUser() {
         return listUser;
@@ -64,7 +67,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
                 .into(holder.img);
         if (user.second.getEnable()==false){
             holder.status.setText("Nghỉ việc");
-            holder.status.setTextColor(red);
+            holder.status.setTextColor(R.color.red);
         }
     }
 
@@ -84,6 +87,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
             email = itemView.findViewById(R.id.emailView);
             status = itemView.findViewById(R.id.statusView);
             img = itemView.findViewById(R.id.imgAccount);
+            itemView.setOnClickListener(this);
         }
 
         @Override

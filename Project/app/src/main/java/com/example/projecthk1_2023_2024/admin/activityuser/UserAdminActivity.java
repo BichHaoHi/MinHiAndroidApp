@@ -1,26 +1,22 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.admin.activityuser;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
-import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
 import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
 import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
-import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -57,8 +53,11 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
                     ListUser listUserInstance = ListUser.getInstance();
                     listUserInstance.setListUser(listUser);
                     recyclerView.setLayoutManager(new LinearLayoutManager(UserAdminActivity.this));
-                    recyclerView.setAdapter(new UserAdapter(listUser,UserAdminActivity.this));
+                    UserAdapter adapter = new UserAdapter(listUser,UserAdminActivity.this);
+                    recyclerView.setAdapter(adapter);
+                    adapter.setClickListener(UserAdminActivity.this);
                     recyclerView.getAdapter().notifyDataSetChanged();
+
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());
                 }
@@ -68,6 +67,8 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
 
     @Override
     public void onClick(View v,int pos) {
-        Toast.makeText(this, "Choose" + listUser.get(pos).first, Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, UserDetailActivity.class);
+        i.putExtra("IdUser", listUser.get(pos).first);
+        startActivity(i);
     }
 }

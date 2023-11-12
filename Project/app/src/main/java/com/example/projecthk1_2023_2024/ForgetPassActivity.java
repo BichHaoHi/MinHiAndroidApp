@@ -46,7 +46,7 @@ public class ForgetPassActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(ForgetPassActivity.this, "Password is reset", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ForgetPassActivity.this, "Please check mail and reset password", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(ForgetPassActivity.this, MainActivity.class));
                     }
                 }).addOnFailureListener(new OnFailureListener() {

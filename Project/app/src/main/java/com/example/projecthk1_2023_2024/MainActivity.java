@@ -17,6 +17,7 @@ import com.example.projecthk1_2023_2024.admin.AdminActivity;
 import com.example.projecthk1_2023_2024.kho.NvkhoActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-
+        firebaseAuth.signOut();
         emailEDT = findViewById(R.id.edtEmail);
         passEDT = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
@@ -65,13 +66,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     private void LoginEmailPasswordUser(String email, String password) {
         if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
             firebaseAuth.signInWithEmailAndPassword(email,password)
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
+                        public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             final String currentUserId = user.getUid();
                             collectionReference.whereEqualTo("LoginID",currentUserId)

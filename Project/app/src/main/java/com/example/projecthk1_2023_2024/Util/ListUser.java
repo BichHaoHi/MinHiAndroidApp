@@ -27,4 +27,12 @@ public class ListUser extends Application {
     public void setListUser(List<Pair<String, User>> listUser) {
         this.listUser = listUser;
     }
+    public Pair<String, User> find(String id){
+        for (Pair<String, User> user : listUser){
+            if (user.first.equals(id)){
+                return user;
+            }
+        }
+        return null;
+    }
 }

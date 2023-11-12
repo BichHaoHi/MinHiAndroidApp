@@ -33,11 +33,11 @@ public class SettingAdminActivity extends AppCompatActivity implements ItemClick
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomsheet();
+                showBottomSheet();
             }
         });
     }
-    private void showBottomsheet() {
+    private void showBottomSheet() {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.fragment_nuttinhnang);
