@@ -1,52 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp">
-
-    <ImageView
-        android:id="@+id/imgAccount"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="20dp"
-        />
-
-    <TextView
-        android:id="@+id/nameView"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/imgAccount"
-        android:text="Bùi Hữu Bình"
-        android:maxLines="1"
-        android:textSize="23dp"/>
-    <TextView
-        android:id="@+id/emailView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/imgAccount"
-        android:layout_below="@id/nameView"
-        android:text="hihihaha@gmail.com"
-        android:textSize="16dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#DAD8D8"
-        android:layout_below="@id/imgAccount"
         android:layout_marginTop="10dp">
 
-    </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/statusView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="68dp"
-        android:layout_toRightOf="@id/nameView"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:text="Đang làm việc"
-        android:textColor="#56DE92"
-        android:textStyle="bold" />
-</RelativeLayout>
+            <ImageView
+                android:id="@+id/avt_vn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/test"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_nv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Bùi Hữu Bình"
+                android:textSize="23dp"
+                app:layout_constraintStart_toEndOf="@+id/avt_vn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/email_nv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="hihihaha@gmail.com"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/avt_vn"
+                app:layout_constraintTop_toBottomOf="@+id/name_nv" />
+
+            <TextView
+                android:id="@+id/status_vn_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Đang làm việc"
+                android:textColor="#56DE92"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/avt_vn"
+                app:layout_constraintTop_toBottomOf="@+id/email_nv"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/status_nv_disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Nghỉ việc"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/avt_vn"
+                app:layout_constraintTop_toBottomOf="@+id/email_nv"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="32dp"
+                android:background="#DAD8D8"
+                app:layout_constraintTop_toBottomOf="@+id/status_nv_disable"
+                tools:layout_editor_absoluteX="0dp"></LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
