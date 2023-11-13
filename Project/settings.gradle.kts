@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProjectHK1_2023-2024"
 include(":app")
- 
+include(":myapplication")

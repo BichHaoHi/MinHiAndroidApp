@@ -17,12 +17,12 @@
 
     <TextView
         android:id="@+id/nameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ellipsize="marquee"
-        android:layout_toEndOf="@+id/imgSP"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/imgSP"
+        android:ellipsize="marquee"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:marqueeRepeatLimit="marquee_forever"
