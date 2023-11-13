@@ -81,7 +81,13 @@ public class SettingAdminActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 firebaseAuth.signOut();
-                startActivity(new Intent(SettingAdminActivity.this, MainActivity.class));
+                Intent intent = new Intent(SettingAdminActivity.this, MainActivity.class);
+
+                // Đặt cờ để xóa hết Activity khác và tạo ngăn xếp mới
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+
             }
         });
 

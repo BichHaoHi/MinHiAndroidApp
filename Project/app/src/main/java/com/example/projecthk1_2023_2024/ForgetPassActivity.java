@@ -3,6 +3,7 @@ package com.example.projecthk1_2023_2024;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,25 +36,28 @@ public class ForgetPassActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ResetPassword(emailEDT.getText().toString().trim());
-
             }
         });
 
     }
 
     private void ResetPassword(String email) {
-        firebaseAuth.sendPasswordResetEmail(email)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(ForgetPassActivity.this, "Please check mail and reset password", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(ForgetPassActivity.this, MainActivity.class));
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(ForgetPassActivity.this, "Email wrong!", Toast.LENGTH_SHORT).show();
-                    }
-                });
+        if (!TextUtils.isEmpty(email)) {
+            firebaseAuth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            Toast.makeText(ForgetPassActivity.this, "Please check mail and reset password", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(ForgetPassActivity.this, MainActivity.class));
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(ForgetPassActivity.this, "Email wrong!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }else {
+            Toast.makeText(this, "Please fill email!", Toast.LENGTH_SHORT).show();
+        }
     }
 }
