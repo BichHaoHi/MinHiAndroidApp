@@ -34,7 +34,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/back"
                 android:layout_width="42dp"
                 android:layout_height="27dp"
                 android:layout_marginEnd="20dp"
@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewNV"
+        android:id="@+id/recyclerViewSP"
         android:layout_width="356dp"
         android:layout_height="593dp"
         android:layout_marginStart="25dp"

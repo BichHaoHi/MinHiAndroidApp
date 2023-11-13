@@ -21,8 +21,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
+import com.example.projecthk1_2023_2024.Util.ListUser;
 import com.example.projecthk1_2023_2024.admin.activityuser.UserAdminActivity;
 import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
+import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -43,7 +46,6 @@ public class AdminActivity extends AppCompatActivity {
     CoordinatorLayout coordinatorLayout;
     ImageView imgUser;
     TextView textView;
-    LinearLayout homebtn,reportbtn,notifibtn,settingbtn;
     FrameLayout nhanVien, nhapHang, xuatHang, product;
     RecyclerView recyclerView;
 //    AdminHomeBinding adminHomeBinding;
@@ -88,6 +90,7 @@ public class AdminActivity extends AppCompatActivity {
                 }
             }
         });
+
         collectionReferenceUser.whereEqualTo("LoginID",loginId)
                         .addSnapshotListener(new EventListener<QuerySnapshot>() {
                             @Override
@@ -106,7 +109,25 @@ public class AdminActivity extends AppCompatActivity {
                                 }
                             }
                         });
-
+        List<Pair<String, User>> listUser = new ArrayList<>();
+        collectionReferenceUser.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        String IdDocument = document.getId();
+                        User user = document.toObject(User.class);
+                        Pair<String, User> userPair = new Pair<>(IdDocument,user);
+                        listUser.add(userPair);
+                    }
+                    Log.d(TAG, String.valueOf(listUser.size()),task.getException());
+                    ListUser listUserInstance = ListUser.getInstance();
+                    listUserInstance.setListUser(listUser);
+                } else {
+                    Log.d(TAG, "Error getting documents: ", task.getException());
+                }
+            }
+        });
         CoordinateBar.setCoordinateBar(coordinatorLayout);
         CoordinateBar.setEventBar(getApplicationContext());
 
@@ -133,8 +154,7 @@ public class AdminActivity extends AppCompatActivity {
         product.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity();
-
+                startActivity(new Intent(AdminActivity.this, ProductAdminActivity.class));
             }
         });
     }

@@ -2,9 +2,10 @@ package com.example.projecthk1_2023_2024.Util;
 
 import android.app.Application;
 
+import com.example.projecthk1_2023_2024.model.User;
+
 public class AuUser extends Application {
-    private String username;
-    private String loginId;
+    private User user;
 
     private static AuUser instance;
 
@@ -18,19 +19,11 @@ public class AuUser extends Application {
     public AuUser() {
     }
 
-    public String getUsername() {
-        return username;
+    public User getUser() {
+        return user;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getLoginId() {
-        return loginId;
-    }
-
-    public void setUserId(String userId) {
-        this.loginId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

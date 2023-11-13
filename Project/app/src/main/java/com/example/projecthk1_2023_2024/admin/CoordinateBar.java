@@ -56,36 +56,10 @@ public class CoordinateBar extends AppCompatActivity {
         lnSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showBottomsheet(context);
+                Intent intent = new Intent(context, SettingAdminActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
             }
         });
-    }
-    public static void showBottomsheet(Context context) {
-        final Dialog dialog = new Dialog(context);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.fragment_nuttinhnang);
-
-        LinearLayout accountLayout = dialog.findViewById(R.id.layoutAccount);
-        LinearLayout logoutLayout = dialog.findViewById(R.id.layoutLogout);
-
-        accountLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, "...", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        logoutLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, "...", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        dialog.show();
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = androidx.appcompat.R.style.Animation_AppCompat_Dialog;
-        dialog.getWindow().setGravity(Gravity.BOTTOM);
     }
 }

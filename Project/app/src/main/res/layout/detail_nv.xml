@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/avt_nv" />
 
             <ImageView
-                android:id="@+id/Back_detail_nv"
+                android:id="@+id/back"
                 android:layout_width="42dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="20dp"
@@ -71,50 +71,25 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/id"
-        android:layout_width="43dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/id"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-    <TextView
-        android:id="@+id/Text_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:text="bTAMBa3y3JcG7LdOUry33R34MT52"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/id"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-    <ImageView
         android:id="@+id/mail"
         android:layout_width="43dp"
         android:layout_height="47dp"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/mail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <TextView
         android:id="@+id/Text_mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:text="mineral123321@gmail.com"
         android:textSize="16dp"
         app:layout_constraintStart_toEndOf="@+id/mail"
-        app:layout_constraintTop_toBottomOf="@id/Text_id" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <ImageView
         android:id="@+id/phone"
@@ -207,4 +182,16 @@
         android:textSize="16dp"
         app:layout_constraintStart_toEndOf="@+id/phone"
         app:layout_constraintTop_toBottomOf="@+id/Text_start_date" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.898" />
 </androidx.constraintlayout.widget.ConstraintLayout>

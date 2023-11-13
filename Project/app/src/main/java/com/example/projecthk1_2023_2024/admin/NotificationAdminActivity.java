@@ -11,6 +11,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NotificationAdminActivity extends AppCompatActivity implements ItemClick {
+    CoordinatorLayout coordinatorLayout;
     RecyclerView recyclerView;
     private CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Notification");
     private FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -42,7 +44,9 @@ public class NotificationAdminActivity extends AppCompatActivity implements Item
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notification);
         recyclerView = findViewById(R.id.recyclerViewTB);
-
+        coordinatorLayout = findViewById(R.id.coordinateLayout);
+        CoordinateBar.setCoordinateBar(coordinatorLayout);
+        CoordinateBar.setEventBar(getApplicationContext());
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {

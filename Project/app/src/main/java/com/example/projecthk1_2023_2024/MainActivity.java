@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.projecthk1_2023_2024.Util.AuUser;
 import com.example.projecthk1_2023_2024.admin.AdminActivity;
 import com.example.projecthk1_2023_2024.kho.NvkhoActivity;
+import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-        firebaseAuth.signOut();
+//        firebaseAuth.signOut();
         emailEDT = findViewById(R.id.edtEmail);
         passEDT = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
@@ -86,17 +87,20 @@ public class MainActivity extends AppCompatActivity {
                                             assert value != null;
                                             if (!value.isEmpty()){
                                                 for(QueryDocumentSnapshot snapshot : value){
+                                                    User user = snapshot.toObject(User.class);
                                                     String role = snapshot.getString("Role");
                                                     AuUser auUser = AuUser.getInstance();
-                                                    auUser.setUserId(snapshot.getString("LoginID"));
-                                                    auUser.setUsername(snapshot.getString("Name"));
-                                                    if ("Admin".equals(role)) {
+                                                    auUser.setUser(user);
+
+                                                    if ("Admin".equals(role) && user.getEnable()) {
                                                         startActivity(new Intent(MainActivity.this, AdminActivity.class));
-                                                    } else {
+                                                    } else if ("Kho".equals(role) && user.getEnable()) {
                                                         startActivity(new Intent(MainActivity.this, NvkhoActivity.class));
                                                     }
 
                                                 }
+                                            } else{
+                                                Toast.makeText(MainActivity.this, "Disable Login", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });

@@ -18,7 +18,7 @@ public class EditAcountActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_account_layout);
-        backAcount = findViewById(R.id.back_acount);
+        backAcount = findViewById(R.id.back);
         backAcount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

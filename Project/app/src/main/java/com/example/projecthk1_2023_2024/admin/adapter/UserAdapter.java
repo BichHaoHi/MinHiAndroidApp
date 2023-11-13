@@ -60,14 +60,18 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
          *  Using Glide Library to Display the images
          * */
 
+
         Glide.with(context)
                 .load(imageUrl)
                 //.placeholder()
                 .fitCenter()
                 .into(holder.img);
         if (user.second.getEnable()==false){
-            holder.status.setText("Nghỉ việc");
-            holder.status.setTextColor(R.color.red);
+            holder.disable.setVisibility(View.VISIBLE);
+            holder.enable.setVisibility(View.GONE);
+        }else{
+            holder.disable.setVisibility(View.GONE);
+            holder.enable.setVisibility(View.VISIBLE);
         }
     }
 
@@ -77,16 +81,17 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     }
 
     public class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name, email, status;
+        TextView name, email, enable,disable;
         ImageView img;
 
         public UserViewHolder(@NonNull View itemView, Context cxt) {
             super(itemView);
             context = cxt;
-            name = itemView.findViewById(R.id.nameView);
-            email = itemView.findViewById(R.id.emailView);
-            status = itemView.findViewById(R.id.statusView);
-            img = itemView.findViewById(R.id.imgAccount);
+            name = itemView.findViewById(R.id.name_nv);
+            email = itemView.findViewById(R.id.email_nv);
+            enable = itemView.findViewById(R.id.status_nv_enable);
+            disable = itemView.findViewById(R.id.status_nv_disable);
+            img = itemView.findViewById(R.id.avt_nv);
             itemView.setOnClickListener(this);
         }
 

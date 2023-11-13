@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.activityuser;
+package com.example.projecthk1_2023_2024.admin.productactivity;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -16,14 +16,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ListUser;
+import com.example.projecthk1_2023_2024.Util.ProListAd;
 import com.example.projecthk1_2023_2024.admin.AdminActivity;
-import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
+import com.example.projecthk1_2023_2024.admin.adapter.ProductAdapter;
 import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
-import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
-import com.example.projecthk1_2023_2024.model.User;
+import com.example.projecthk1_2023_2024.model.Product;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -32,25 +32,24 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserAdminActivity extends AppCompatActivity implements ItemClick {
+public class ProductAdminActivity extends AppCompatActivity implements ItemClick {
     RecyclerView recyclerView;
-    ImageButton btnAdd;
     ImageView back;
-    private FirebaseFirestore firestore = FirebaseFirestore.getInstance();
-    private CollectionReference collectionReference = firestore.collection("User");
-    private List<Pair<String, User>> listUser = new ArrayList<>();
+    private FirebaseAuth firebaseAuth;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private CollectionReference collectionReference = db.collection("Product");
+    private List<Pair<String, Product>> listProduct = new ArrayList<>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nhan_vien);
-        recyclerView = findViewById(R.id.recyclerViewNV);
-        btnAdd = findViewById(R.id.btnAdd);
+        setContentView(R.layout.sanpham);
+        recyclerView = findViewById(R.id.recyclerViewSP);
         back = findViewById(R.id.back);
-
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UserAdminActivity.this, AdminActivity.class));
+                startActivity(new Intent(ProductAdminActivity.this, AdminActivity.class));
             }
         });
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -59,38 +58,26 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         String IdDocument = document.getId();
-                        User user = document.toObject(User.class);
-                        Pair<String, User> userPair = new Pair<>(IdDocument,user);
-                        listUser.add(userPair);
+                        Product product = document.toObject(Product.class);
+                        Pair<String, Product> productPair = new Pair<>(IdDocument,product);
+                        listProduct.add(productPair);
                     }
-                    Log.d(TAG, String.valueOf(listUser.size()),task.getException());
-                    ListUser listUserInstance = ListUser.getInstance();
-                    listUserInstance.setListUser(listUser);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(UserAdminActivity.this));
-                    UserAdapter adapter = new UserAdapter(listUser,UserAdminActivity.this);
+                    ProListAd proListAd = ProListAd.getInstance();
+                    proListAd.setProductList(listProduct);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(ProductAdminActivity.this));
+                    ProductAdapter adapter = new ProductAdapter(ProductAdminActivity.this,listProduct);
                     recyclerView.setAdapter(adapter);
-                    adapter.setClickListener(UserAdminActivity.this);
+                    adapter.setClickListener(ProductAdminActivity.this);
                     recyclerView.getAdapter().notifyDataSetChanged();
-
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());
                 }
             }
         });
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(UserAdminActivity.this,AddUserActivity.class));
-            }
-        });
     }
 
-
-
     @Override
-    public void onClick(View v,int pos) {
-        Intent i = new Intent(this, UserDetailActivity.class);
-        i.putExtra("IdUser", listUser.get(pos).first);
-        startActivity(i);
+    public void onClick(View v, int pos) {
+
     }
 }
