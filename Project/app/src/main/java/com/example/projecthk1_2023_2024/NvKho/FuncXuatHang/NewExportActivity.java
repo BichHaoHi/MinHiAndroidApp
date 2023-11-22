@@ -1,25 +1,24 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.NvKho.FuncXuatHang;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
-import android.util.Pair;
-import android.view.View;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.Util.ViewModel.VMNewExport;
+import com.example.projecthk1_2023_2024.admin.CoordinateBar;
 import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
-import com.example.projecthk1_2023_2024.model.Notification;
+import com.example.projecthk1_2023_2024.model.Export;
+import com.example.projecthk1_2023_2024.model.Product;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,21 +31,23 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationAdminActivity extends AppCompatActivity implements ItemClick {
+import kotlin.Triple;
+
+public class NewExportActivity extends AppCompatActivity implements ItemClick {
     CoordinatorLayout coordinatorLayout;
-    RecyclerView recyclerView;
-    private CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Notification");
+    RecyclerView recycler;
+    private CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Export");
     private FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-    private List<Pair<String, Notification>> listNotification = new ArrayList<>();
+    private List<VMNewExport> listNewExp = new ArrayList<>();
 
 
     @SuppressLint("MissingInflatedId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notification);
-        recyclerView = findViewById(R.id.recyclerViewTB);
-        coordinatorLayout = findViewById(R.id.coordinateLayout);
+        setContentView(R.layout.nvkho_func2_qlxkho_layout);
+        recycler = findViewById(R.id.dspxMoi);
+        coordinatorLayout = findViewById(R.id.coordinateLayout);// :?
         CoordinateBar.setCoordinateBar(coordinatorLayout);
         CoordinateBar.setEventBar(getApplicationContext());
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -55,14 +56,15 @@ public class NotificationAdminActivity extends AppCompatActivity implements Item
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         String IdDocument = document.getId();
-                        Notification notification = document.toObject(Notification.class);
-                        Pair<String, Notification> notificationPair = new Pair<>(IdDocument,notification);
-                        listNotification.add(notificationPair);
-                        NotificationAdapter adapter = new NotificationAdapter(NotificationAdminActivity.this,listNotification);
-                        adapter.sortStatus();
-                        recyclerView.setLayoutManager(new LinearLayoutManager(NotificationAdminActivity.this));
-                        recyclerView.setAdapter(adapter);
-                        recyclerView.getAdapter().notifyDataSetChanged();
+                        Export exp = document.toObject(Export.class);
+                        Product product = document.toObject(Product.class);
+//                        Pair<String, > newExpTriple = new Triple<>(IdDocument,exp, product);
+//                        listNewExp.add(newExpTriple);
+                        NewExportAdapter adapter = new NewExportAdapter(NewExportActivity.this, listNewExp);
+                        //adapter.sortStatus();
+                        recycler.setLayoutManager(new LinearLayoutManager(NewExportActivity.this));
+                        recycler.setAdapter(adapter);
+                        recycler.getAdapter().notifyDataSetChanged();
                     }
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,24 +14,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectHK1_20232024"
         tools:targetApi="31">
-        <activity android:name=".ForgetPassActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.activityuser.UserAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.AdminActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.NotificationAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.SettingAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.activityuser.UserDetailActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.productactivity.ProductAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".admin.activityuser.AddUserActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".NvKho.FuncXuatHang.NewExportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activityuser.UserAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.NotificationAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.SettingAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activityuser.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.productactivity.ProductAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.activityuser.AddUserActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +53,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".NvKho.FuncQLSP.Func_QLSPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.FuncNhapHang.Func_qlNhapHangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.FuncXuatHang.Func_qlXuatHangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkFragMain"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.FuncPlace.Func_PlaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_PN"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_PX"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.Report.Acti_TK_SP"
+            android:exported="true" />
     </application>
 
 </manifest>

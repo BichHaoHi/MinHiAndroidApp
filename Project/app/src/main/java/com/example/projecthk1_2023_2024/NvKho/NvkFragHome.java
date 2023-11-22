@@ -13,7 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.projecthk1_2023_2024.NvKho.FuncNhapHang.Func_qlNhapHangActivity;
 import com.example.projecthk1_2023_2024.NvKho.FuncPlace.Func_PlaceActivity;
+import com.example.projecthk1_2023_2024.NvKho.FuncXuatHang.Func_qlXuatHangActivity;
 import com.example.projecthk1_2023_2024.R;
 
 public class NvkFragHome extends Fragment {
@@ -59,7 +61,7 @@ public class NvkFragHome extends Fragment {
         qlXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), Func_qlXuatHang.class);
+                Intent i = new Intent(getContext(), Func_qlXuatHangActivity.class);
                 startActivity(i);
                 // bắt các sự kiện để xem tt detail
             }
@@ -69,7 +71,7 @@ public class NvkFragHome extends Fragment {
         qlNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), Func_qlNhapHang.class);
+                Intent i = new Intent(getContext(), Func_qlNhapHangActivity.class);
                 startActivity(i);
                 // bắt các sự kiện để xem tt detail
             }

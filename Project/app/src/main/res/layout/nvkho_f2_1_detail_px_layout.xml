@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:paddingTop="10dp"
-            android:text="Danh sách phiếu xuất mới"
+            android:text="Chi tiết phiếu xuất"
             android:textColor="#ffffff"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"

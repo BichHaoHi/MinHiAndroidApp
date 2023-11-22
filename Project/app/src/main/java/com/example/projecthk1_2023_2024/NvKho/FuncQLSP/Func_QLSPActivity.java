@@ -1,84 +1,92 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncQLSP;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.projecthk1_2023_2024.NvKho.FuncPlace.AdapterKhu;
+
 import com.example.projecthk1_2023_2024.NvKho.NvkFragHome;
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.Khu;
+import com.example.projecthk1_2023_2024.Util.ProListAd;
 import com.example.projecthk1_2023_2024.Util.QLSP;
+import com.example.projecthk1_2023_2024.Util.ViewModel.VMQlsp;
+import com.example.projecthk1_2023_2024.admin.AdminActivity;
+import com.example.projecthk1_2023_2024.admin.adapter.ProductAdapter;
+import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
+import com.example.projecthk1_2023_2024.model.Product;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Func_QLSPActivity extends AppCompatActivity {
-
+public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
+    RecyclerView recyclerView;
     ImageView back;
-    AdapterQLSP adapter;
-    RecyclerView recyPhieuSP;
-    ArrayList<QLSP> arrP;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private CollectionReference collectionReferenceProduct = db.collection("Product");
+    private CollectionReference collectionReferenceBatch = db.collection("ProductBatch");
 
-    EditText edtSearch;
+    private List<VMQlsp> listPr = new ArrayList<>();// ??
 
-    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nvkho_func4_qlsp_layout);
-
-        // 1. xu ly back
-        back = findViewById(R.id.back_home1);
+        setContentView(R.layout.sanpham);
+        recyclerView = findViewById(R.id.recyclerViewSP);
+        back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Func_QLSPActivity.this, NvkFragHome.class);
-                startActivity(i);
+                startActivity(new Intent(Func_QLSPActivity.this, AdminActivity.class));
             }
         });
-        //2. xu ly hien thi space kho
-        recyPhieuSP = findViewById(R.id.recy_phieuSP_f4);
-        arrP = new ArrayList<QLSP>();
-        QLSP p1 = new QLSP("Sửa rửa mặt", "ML001", "100", "Đợi xuất hàng", "25/12/2030");
-        QLSP p2 = new QLSP("Sửa rửa mặt2", "ML002", "200", "Đã xuất hàng", "25/12/2030");
-        arrP.add(p1);
-        arrP.add(p2);
-        adapter = new AdapterQLSP(arrP); // Khởi tạo adapter
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyPhieuSP.setLayoutManager(layoutManager);
-        recyPhieuSP.setAdapter(adapter);
-        // sử lý Search
-        edtSearch = findViewById(R.id.search_qlysp);
-        edtSearch.addTextChangedListener(new TextWatcher() {
+        collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                // Khi người dùng thay đổi nội dung trong EditText, lọc danh sách người dùng theo từ khóa
-                String query = charSequence.toString().toLowerCase();
-                ArrayList<QLSP> filteredList = new ArrayList<>();
-
-                for (QLSP pSP : arrP) {
-                    if (pSP.getTenSP().toLowerCase().contains(query)) {
-                        filteredList.add(pSP);
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        String IdDocument = document.getId();
+                        Product product = document.toObject(Product.class);
+                        Pair<String, Product> productPair = new Pair<>(IdDocument,product);
+                        listPr.add(productPair);
                     }
+                    ProListAd proListAd = ProListAd.getInstance();
+                    proListAd.setProductList(listProduct);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(Func_QLSPActivity.this));
+                    QLSPAdapter adapter = new QLSPAdapter(Func_QLSPActivity.this, listPr);
+                    recyclerView.setAdapter(adapter);
+                    adapter.setClickListener(Func_QLSPActivity.this);
+                    recyclerView.getAdapter().notifyDataSetChanged();
+                } else {
+                    Log.d(TAG, "Error getting documents: ", task.getException());
                 }
-
-                adapter.filterList(filteredList); // Cập nhật RecyclerView với danh sách lọc
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
             }
         });
+    }
+
+    @Override
+    public void onClick(View v, int pos) {
+
     }
 }

@@ -56,7 +56,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/maPX"
+            android:id="@+id/tensp21"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="0dp"
@@ -68,7 +68,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tenSP"
+            android:id="@+id/slt21"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
@@ -76,40 +76,40 @@
             android:text="Sửa rửa mặt"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/maPX"
+            app:layout_constraintTop_toBottomOf="@+id/tensp21"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slxkho"
+            android:id="@+id/slx21"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="60"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/tenSP"
+            app:layout_constraintTop_toBottomOf="@+id/slt21"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/vtri"
+            android:id="@+id/vt21"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="Khu A Kệ 1"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/slxkho"
+            app:layout_constraintTop_toBottomOf="@+id/slx21"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/hsd"
+            android:id="@+id/hsd21"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="25/12/2023 "
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/vtri"
+            app:layout_constraintTop_toBottomOf="@+id/vt21"
             tools:ignore="MissingConstraints" />
 
 

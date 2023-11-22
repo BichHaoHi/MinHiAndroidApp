@@ -7,12 +7,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_phieu"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_width="393dp"
+        android:layout_height="225dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
         android:background="@drawable/border_phieu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,11 +20,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="170dp"
-            android:layout_height="250dp"
+            android:layout_width="166dp"
+            android:layout_height="198dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
-            android:text="Tên SP:\n \nMã lô:\n \nSL tồn:\n \nHSD:\n \nTình trạng xuất hàng:"
+            android:text="Tên SP:\n \nMã lô:\n \nSL tồn:\n \nHSD:\n"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -75,17 +74,6 @@
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/slTon1"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/ttXuat1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginStart="0dp"
-            android:text="Đợi xuất/Bình thường"
-            android:textSize="20dp"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/hsd1"
             tools:ignore="MissingConstraints" />
 
 

@@ -14,15 +14,15 @@ import com.example.projecthk1_2023_2024.Util.QLSP;
 
 import java.util.ArrayList;
 
-public class AdapterQLSP extends RecyclerView.Adapter<AdapterQLSP.MyViewHolder> {
+public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> {
     private ArrayList<QLSP> dsTTSP;
 
-    public AdapterQLSP(ArrayList<QLSP> listTTSP){
+    public QLSPAdapter(ArrayList<QLSP> listTTSP){
         this.dsTTSP = listTTSP;
     }
 
 
-    public AdapterQLSP.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public QLSPAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.nvkho_func4_qlsp_item, parent, false);
         return new MyViewHolder(itemView);
     }
@@ -30,12 +30,11 @@ public class AdapterQLSP extends RecyclerView.Adapter<AdapterQLSP.MyViewHolder> 
 
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterQLSP.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull QLSPAdapter.MyViewHolder holder, int position) {
         QLSP item = dsTTSP.get(position);
         holder.txtTenSP.setText(item.getTenSP());
         holder.txtMaLo.setText(item.getMaLo());
         holder.txtSLTon.setText(item.getSlTon());
-        holder.txtTTXuat.setText(item.getTtXuat());
         holder.txtHSD.setText(item.getHsd());
     }
 
@@ -49,7 +48,7 @@ public class AdapterQLSP extends RecyclerView.Adapter<AdapterQLSP.MyViewHolder> 
         TextView txtMaLo;
         TextView txtSLTon;
         TextView txtHSD;
-        TextView txtTTXuat;
+
 
         public MyViewHolder(@NonNull View itemView) {
 
@@ -57,7 +56,6 @@ public class AdapterQLSP extends RecyclerView.Adapter<AdapterQLSP.MyViewHolder> 
                 txtTenSP = itemView.findViewById(R.id.namePr1);
                 txtMaLo = itemView.findViewById(R.id.maLo1);
                 txtSLTon = itemView.findViewById(R.id.slTon1);
-                txtTTXuat = itemView.findViewById(R.id.ttXuat1);
                 txtHSD = itemView.findViewById(R.id.hsd1);
         }
     }
