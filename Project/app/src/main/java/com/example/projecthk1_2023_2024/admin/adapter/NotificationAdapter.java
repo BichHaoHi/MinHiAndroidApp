@@ -106,4 +106,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             time = itemView.findViewById(R.id.textDate);
         }
     }
+
+
+
+
 }

@@ -97,7 +97,7 @@ public class AddUserActivity extends AppCompatActivity {
                             try{
                                 Date date = dateFormat.parse(birUser);
                                 Timestamp timestamp = new Timestamp(date);
-                                User user = new User(null,timestamp,emailUser,true,"",null,nameUser,phoneUser,posCodeUser,"Kho",sexUser,Timestamp.now());
+                                User user = new User("",timestamp,emailUser,true,"",currentUserId,nameUser,phoneUser,posCodeUser,"Kho",sexUser,Timestamp.now());
                                 ListUser listUser = ListUser.getInstance();
                                 String idDocument = String.valueOf(listUser.getListUser().size()+1);
                                 collectionReferenceUser.document(idDocument)
