@@ -14,19 +14,19 @@
         tools:targetApi="31">
         <activity android:name=".ForgetPassActivity"
             android:exported="false"/>
-        <activity android:name=".admin.activityuser.UserAdminActivity"
+        <activity android:name=".Admin.activityuser.UserAdminActivity"
             android:exported="false"/>
-        <activity android:name=".admin.AdminActivity"
+        <activity android:name=".Admin.AdminActivity"
             android:exported="false"/>
-        <activity android:name=".admin.NotificationAdminActivity"
+        <activity android:name=".Admin.NotificationAdminActivity"
             android:exported="false"/>
-        <activity android:name=".admin.SettingAdminActivity"
+        <activity android:name=".Admin.SettingAdminActivity"
             android:exported="false"/>
-        <activity android:name=".admin.activityuser.UserDetailActivity"
+        <activity android:name=".Admin.activityuser.UserDetailActivity"
             android:exported="false"/>
-        <activity android:name=".admin.productactivity.ProductAdminActivity"
+        <activity android:name=".Admin.productactivity.ProductAdminActivity"
             android:exported="false"/>
-        <activity android:name=".admin.activityuser.AddUserActivity"
+        <activity android:name=".Admin.activityuser.AddUserActivity"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"
@@ -37,6 +37,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NvKho.NvkActivity"
+            android:exported="false"/>
+        <activity android:name=".NvKho.AccountActivity"
+            android:exported="false"/>
+        <activity android:name=".NvKho.NvkFragMain"
+            android:exported="false"/>
+
 
     </application>
 

@@ -12,20 +12,21 @@ public class Notification extends BaseObservable {
     private String IDBatch;
     private String IDExport;
     private String IDImport;
+    private Boolean Role;
 
     public Notification() {
     }
 
-    public Notification(Timestamp date_Create, String description, Boolean enable, String IDBatch, String IDExport, String IDImport) {
+    public Notification(Timestamp date_Create, String description, Boolean enable, String IDBatch, String IDExport, String IDImport, Boolean role) {
         Date_Create = date_Create;
         Description = description;
         Enable = enable;
         this.IDBatch = IDBatch;
         this.IDExport = IDExport;
         this.IDImport = IDImport;
+        Role = role;
     }
 
-    @Bindable
     public Timestamp getDate_Create() {
         return Date_Create;
     }
@@ -33,7 +34,7 @@ public class Notification extends BaseObservable {
     public void setDate_Create(Timestamp date_Create) {
         Date_Create = date_Create;
     }
-    @Bindable
+
     public String getDescription() {
         return Description;
     }
@@ -41,7 +42,7 @@ public class Notification extends BaseObservable {
     public void setDescription(String description) {
         Description = description;
     }
-    @Bindable
+
     public Boolean getEnable() {
         return Enable;
     }
@@ -49,7 +50,7 @@ public class Notification extends BaseObservable {
     public void setEnable(Boolean enable) {
         Enable = enable;
     }
-    @Bindable
+
     public String getIDBatch() {
         return IDBatch;
     }
@@ -57,7 +58,7 @@ public class Notification extends BaseObservable {
     public void setIDBatch(String IDBatch) {
         this.IDBatch = IDBatch;
     }
-    @Bindable
+
     public String getIDExport() {
         return IDExport;
     }
@@ -65,12 +66,20 @@ public class Notification extends BaseObservable {
     public void setIDExport(String IDExport) {
         this.IDExport = IDExport;
     }
-    @Bindable
+
     public String getIDImport() {
         return IDImport;
     }
 
     public void setIDImport(String IDImport) {
         this.IDImport = IDImport;
+    }
+
+    public Boolean getRole() {
+        return Role;
+    }
+
+    public void setRole(Boolean role) {
+        Role = role;
     }
 }

@@ -47,7 +47,7 @@
                         app:srcCompat="@drawable/vit" />
 
                     <TextView
-                        android:id="@+id/nameAccount"
+                        android:id="@+id/nameAccountNV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -231,6 +231,7 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/newNote"
                     android:layout_width="392dp"
                     android:layout_height="320dp"
                     app:layout_constraintBottom_toBottomOf="parent"

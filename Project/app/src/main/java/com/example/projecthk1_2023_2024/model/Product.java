@@ -4,16 +4,18 @@ public class Product {
     String Name;
     String Link_Photo;
     int Quantity;
+    int Quantity_Valid;
     int Quantity_stock;
 
     public Product() {
     }
 
-    public Product(String name, String link_Photo, int quantity, int quantity_Stock) {
+    public Product(String name, String link_Photo, int quantity, int quantity_Valid, int quantity_stock) {
         Name = name;
         Link_Photo = link_Photo;
         Quantity = quantity;
-        Quantity_stock = quantity_Stock;
+        Quantity_Valid = quantity_Valid;
+        Quantity_stock = quantity_stock;
     }
 
     public String getName() {
@@ -40,11 +42,19 @@ public class Product {
         Quantity = quantity;
     }
 
-    public int getQuantity_Stock() {
+    public int getQuantity_Valid() {
+        return Quantity_Valid;
+    }
+
+    public void setQuantity_Valid(int quantity_Valid) {
+        Quantity_Valid = quantity_Valid;
+    }
+
+    public int getQuantity_stock() {
         return Quantity_stock;
     }
 
-    public void setQuantity_Stock(int quantity_Stock) {
-        Quantity_stock = quantity_Stock;
+    public void setQuantity_stock(int quantity_stock) {
+        Quantity_stock = quantity_stock;
     }
 }

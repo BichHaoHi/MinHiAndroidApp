@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -9,7 +9,6 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,10 +21,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
-import com.example.projecthk1_2023_2024.admin.activityuser.UserAdminActivity;
-import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
-import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
-import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
+import com.example.projecthk1_2023_2024.Admin.activityuser.UserAdminActivity;
+import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.Admin.productactivity.ProductAdminActivity;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -96,7 +94,7 @@ public class AdminActivity extends AppCompatActivity {
                             @Override
                             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                                 if (error != null){
-                                    Toast.makeText(AdminActivity.this, error.getMessage() + "Line 87", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(AdminActivity.this, error.getMessage() + "Line 97", Toast.LENGTH_SHORT).show();
                                 }
                                 assert value != null;
                                 if (!value.isEmpty()){

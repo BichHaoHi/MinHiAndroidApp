@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.adapter;
+package com.example.projecthk1_2023_2024.Admin.adapter;
 
 import android.content.Context;
 import android.util.Pair;
@@ -13,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.google.firebase.Timestamp;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 

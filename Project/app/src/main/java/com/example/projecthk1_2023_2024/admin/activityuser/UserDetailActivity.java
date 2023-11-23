@@ -1,14 +1,8 @@
-package com.example.projecthk1_2023_2024.admin.activityuser;
-
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+package com.example.projecthk1_2023_2024.Admin.activityuser;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.util.Pair;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projecthk1_2023_2024.R;

@@ -53,7 +53,7 @@ public class Func_PlaceActivity extends AppCompatActivity {
         arrKhu.add(khuC);
         arrKhu.add(khuD);
 
-        adapterKhu = new AdapterKhu(arrKhu); // Khởi tạo adapter
+//        adapterKhu = new AdapterKhu(arrKhu); // Khởi tạo adapter
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyListKhu.setLayoutManager(layoutManager);

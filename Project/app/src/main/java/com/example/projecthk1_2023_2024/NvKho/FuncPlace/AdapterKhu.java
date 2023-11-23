@@ -1,5 +1,7 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncPlace;
 
+import android.content.Context;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,17 +12,26 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.Khu;
+import com.example.projecthk1_2023_2024.model.Zone;
 
 import java.util.ArrayList;
 
 public class AdapterKhu extends RecyclerView.Adapter<AdapterKhu.MyViewHolder> {
-    private ArrayList<Khu> dsKhu;
+    private ArrayList<Pair<String, Zone>> dsKhu;
+    Context context;
+    ItemClick itemClick;
 
 
-    public AdapterKhu(ArrayList<Khu> listNV){
-        this.dsKhu = listNV;
+    public AdapterKhu(ArrayList<Pair<String, Zone>> dsKhu, Context context, ItemClick itemClick) {
+        this.dsKhu = dsKhu;
+        this.context = context;
+        this.itemClick = itemClick;
+    }
+    public void setClickListener(ItemClick itemClick){
+        this.itemClick = itemClick;
     }
 
     @NonNull
@@ -34,11 +45,11 @@ public class AdapterKhu extends RecyclerView.Adapter<AdapterKhu.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull AdapterKhu.MyViewHolder holder, int position) {
-        Khu item = dsKhu.get(position);
-        holder.txtNameKhu.setText(item.getNameKhu());
-
-
-        int itemPosition = holder.getAdapterPosition();
+//        Zone item = dsKhu.get(position);
+//        holder.txtNameKhu.setText(item.getNameKhu());
+//
+//
+//        int itemPosition = holder.getAdapterPosition();
 
 
     }

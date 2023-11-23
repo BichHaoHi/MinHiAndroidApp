@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.activityuser;
+package com.example.projecthk1_2023_2024.Admin.activityuser;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -86,7 +86,7 @@ public class AddUserActivity extends AppCompatActivity {
 
     private void CreateUserEmailAccount(String emailUser, String password, String nameUser, String birUser, String sexUser, String phoneUser, String posCodeUser) {
         if(!TextUtils.isEmpty(emailUser)&& !TextUtils.isEmpty(nameUser) && !TextUtils.isEmpty(birUser)
-        && !TextUtils.isEmpty(sexUser) && !TextUtils.isEmpty(phoneUser)){
+                && !TextUtils.isEmpty(sexUser) && !TextUtils.isEmpty(phoneUser)){
             firebaseAuth.createUserWithEmailAndPassword(emailUser,password)
                     .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projecthk1_2023_2024.R;
 
-public class EditAcountActivity extends AppCompatActivity {
+public class EditAccountActivity extends AppCompatActivity {
     ImageView backAcount;
     Button btnSaveEdit;
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class EditAcountActivity extends AppCompatActivity {
         backAcount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(EditAcountActivity.this, AcountActivity.class);
+                Intent i = new Intent(EditAccountActivity.this, AccountActivity.class);
                 startActivity(i);
             }
         });
@@ -32,7 +32,7 @@ public class EditAcountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // xu ly luu data, hien tb va cap nhat tt ve giao dien truoc
-                Toast.makeText(EditAcountActivity.this, "Lưu thông tin thành công", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditAccountActivity.this, "Lưu thông tin thành công", Toast.LENGTH_SHORT).show();
                 // sử dụng bundel trong Intent để lấy tất cả dữ liệu người dùng nhập trả lại cho giao diện Acount
             }
         });

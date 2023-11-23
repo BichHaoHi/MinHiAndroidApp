@@ -31,7 +31,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/namePr"
+            android:id="@+id/namePr31"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="0dp"
@@ -43,7 +43,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/maLo"
+            android:id="@+id/maLo31"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
@@ -51,29 +51,29 @@
             android:text="LX0124"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/namePr"
+            app:layout_constraintTop_toBottomOf="@+id/namePr31"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slTon"
+            android:id="@+id/slTon31"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="60"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/maLo"
+            app:layout_constraintTop_toBottomOf="@+id/maLo31"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slNhap"
+            android:id="@+id/slNhap31"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="100"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/slTon"
+            app:layout_constraintTop_toBottomOf="@+id/slTon31"
             tools:ignore="MissingConstraints" />
 
 

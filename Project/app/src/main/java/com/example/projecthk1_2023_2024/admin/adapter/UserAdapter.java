@@ -1,6 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.adapter;
-
-import static com.example.projecthk1_2023_2024.R.color.red;
+package com.example.projecthk1_2023_2024.Admin.adapter;
 
 import android.content.Context;
 import android.util.Pair;
@@ -15,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.User;
 
 import java.util.List;

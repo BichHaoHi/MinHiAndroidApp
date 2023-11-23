@@ -1,23 +1,22 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -39,6 +38,7 @@ public class NotificationAdminActivity extends AppCompatActivity implements Item
     private List<Pair<String, Notification>> listNotification = new ArrayList<>();
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

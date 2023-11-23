@@ -23,19 +23,19 @@ public class User extends BaseObservable {
     public User() {
     }
 
-    public User(String address, Timestamp birthday, String email, Boolean enable, String image, String loginID, String name, String phone, String postcode, String role, String sex, Timestamp start_Date) {
-        Address = address;
-        Birthday = birthday;
-        Email = email;
-        Enable = enable;
-        Image = image;
-        LoginID = loginID;
-        UserName = name;
-        Phone = phone;
-        Postcode = postcode;
-        Role = role;
-        Sex = sex;
-        Start_Date = start_Date;
+    public User(String Address, Timestamp Birthday, String Email, Boolean Enable, String Image, String LoginID, String UserName, String Phone, String Postcode, String Role, String Sex, Timestamp Start_Date) {
+        this.Address = Address;
+        this.Birthday = Birthday;
+        this.Email = Email;
+        this.Enable = Enable;
+        this.Image = Image;
+        this.LoginID = LoginID;
+        this.UserName = UserName;
+        this.Phone = Phone;
+        this.Postcode = Postcode;
+        this.Role = Role;
+        this.Sex = Sex;
+        this.Start_Date = Start_Date;
     }
 
     @Bindable

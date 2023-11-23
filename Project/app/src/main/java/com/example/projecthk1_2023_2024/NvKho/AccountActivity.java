@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projecthk1_2023_2024.R;
 
-public class AcountActivity extends AppCompatActivity {
+public class AccountActivity extends AppCompatActivity {
     ImageView back;
-    ImageView editAcount;
+    ImageView editAccount;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,16 +23,16 @@ public class AcountActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AcountActivity.this, NvkFragMain.class);
+                Intent i = new Intent(AccountActivity.this, NvkFragMain.class);
                 startActivity(i);
             }
         });
 
-        editAcount = findViewById(R.id.edit_account);
-        editAcount.setOnClickListener(new View.OnClickListener() {
+        editAccount = findViewById(R.id.edit_account);
+        editAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AcountActivity.this, EditAcountActivity.class);
+                Intent i = new Intent(AccountActivity.this, EditAccountActivity.class);
                 startActivity(i);
             }
         });

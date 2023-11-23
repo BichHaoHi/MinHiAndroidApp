@@ -32,7 +32,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/maPX"
+            android:id="@+id/mapx2"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="0dp"
@@ -44,7 +44,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tenSP"
+            android:id="@+id/tensp2"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
@@ -52,18 +52,18 @@
             android:text="Sửa rửa mặt"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/maPX"
+            app:layout_constraintTop_toBottomOf="@+id/mapx2"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slxkho"
+            android:id="@+id/slx2"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:text="60"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/tenSP"
+            app:layout_constraintTop_toBottomOf="@+id/tensp2"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

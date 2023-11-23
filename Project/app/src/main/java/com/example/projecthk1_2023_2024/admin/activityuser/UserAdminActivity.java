@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.activityuser;
+package com.example.projecthk1_2023_2024.Admin.activityuser;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -17,10 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
-import com.example.projecthk1_2023_2024.admin.AdminActivity;
-import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
-import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
+import com.example.projecthk1_2023_2024.Admin.AdminActivity;
+import com.example.projecthk1_2023_2024.Admin.adapter.UserAdapter;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
