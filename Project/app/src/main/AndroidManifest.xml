@@ -21,31 +21,10 @@
             android:name=".ForgetPassActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.activityuser.UserAdminActivity"
+            android:name=".Admin.activityuser.UserAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.AdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.NotificationAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.SettingAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.activityuser.UserDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.productactivity.ProductAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.activityuser.AddUserActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".NvKho.NvkActivity"
+            android:name=".Admin.AdminActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,6 +32,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Admin.NotificationAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.SettingAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.productactivity.ProductAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NvKho.NvkActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".NvKho.FuncQLSP.Func_QLSPActivity"
             android:exported="true" />

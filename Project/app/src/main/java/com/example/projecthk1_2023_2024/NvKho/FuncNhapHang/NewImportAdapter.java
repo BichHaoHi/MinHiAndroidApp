@@ -7,13 +7,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.projecthk1_2023_2024.NvKho.FuncXuatHang.NewExportAdapter;
+
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ViewModel.VMNewExport;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import java.util.List;
 
-public class NewImportAdapter extends RecyclerView.Adapter<NewExportAdapter.MyViewHolder>  {
+public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyViewHolder>  {
     Context context;
     ItemClick itemClick;
     private List<VMNewExport> listNewExp;

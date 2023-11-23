@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -9,7 +9,6 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,11 +20,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ListUser;
-import com.example.projecthk1_2023_2024.admin.activityuser.UserAdminActivity;
-import com.example.projecthk1_2023_2024.admin.adapter.NotificationAdapter;
-import com.example.projecthk1_2023_2024.admin.adapter.UserAdapter;
-import com.example.projecthk1_2023_2024.admin.productactivity.ProductAdminActivity;
+import com.example.projecthk1_2023_2024.Util.ViewModel.VMListUser;
+import com.example.projecthk1_2023_2024.Admin.activityuser.UserAdminActivity;
+import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.Admin.productactivity.ProductAdminActivity;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -121,7 +119,7 @@ public class AdminActivity extends AppCompatActivity {
                         listUser.add(userPair);
                     }
                     Log.d(TAG, String.valueOf(listUser.size()),task.getException());
-                    ListUser listUserInstance = ListUser.getInstance();
+                    VMListUser listUserInstance = VMListUser.getInstance();
                     listUserInstance.setListUser(listUser);
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());

@@ -13,13 +13,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.projecthk1_2023_2024.Util.AuUser;
-import com.example.projecthk1_2023_2024.admin.AdminActivity;
+import com.example.projecthk1_2023_2024.Admin.AdminActivity;
 import com.example.projecthk1_2023_2024.kho.NvkhoActivity;
 import com.example.projecthk1_2023_2024.model.User;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

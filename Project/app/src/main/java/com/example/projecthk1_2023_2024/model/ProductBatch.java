@@ -19,6 +19,9 @@ public class ProductBatch {
         this.id_sheft = id_sheft;
     }
 
+    public ProductBatch() {
+    }
+
     public String getId_product() {
         return id_product;
     }

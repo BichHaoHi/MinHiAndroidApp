@@ -1,12 +1,8 @@
-package com.example.projecthk1_2023_2024.admin.detaillayout;
+package com.example.projecthk1_2023_2024.Admin.detaillayout;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.projecthk1_2023_2024.R;
 
 public class UserDetails extends AppCompatActivity {
     @Override

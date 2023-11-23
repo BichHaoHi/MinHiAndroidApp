@@ -1,5 +1,6 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncQLSP;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,61 +10,73 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
+import com.example.projecthk1_2023_2024.Util.ViewModel.VMQlsp;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 
-import com.example.projecthk1_2023_2024.Util.QLSP;
-
-import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> {
-    private ArrayList<QLSP> dsTTSP;
+    Context context;
+    ItemClick itemClick;
+    private List<VMQlsp> listSP;
 
-    public QLSPAdapter(ArrayList<QLSP> listTTSP){
-        this.dsTTSP = listTTSP;
+    public QLSPAdapter(Context context, List<VMQlsp> listSP) {
+        this.context = context;
+        this.listSP = listSP;
     }
 
+    public void setClickListener(ItemClick itemClick){
+        this.itemClick = itemClick;
+    }
 
+    @NonNull
+    @Override
     public QLSPAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.nvkho_func4_qlsp_item, parent, false);
-        return new MyViewHolder(itemView);
+        View view = LayoutInflater.from(context)
+                .inflate(R.layout.nvkho_func4_qlsp_item,parent,false);
+        return new QLSPAdapter.MyViewHolder(view, context);
     }
-
-
 
     @Override
     public void onBindViewHolder(@NonNull QLSPAdapter.MyViewHolder holder, int position) {
-        QLSP item = dsTTSP.get(position);
-        holder.txtTenSP.setText(item.getTenSP());
-        holder.txtMaLo.setText(item.getMaLo());
-        holder.txtSLTon.setText(item.getSlTon());
-        holder.txtHSD.setText(item.getHsd());
+        VMQlsp SPPair = listSP.get(position);
+        holder.txtTensp.setText(SPPair.getProductPair4().second.getName());
+        holder.txtSlt.setText(SPPair.getProductPair4().second.getQuantity());
+        holder.txtMaLo.setText(SPPair.getBatchPair4().first);
+
+        Date exprided = SPPair.getBatchPair4().second.getExpride_date();
+        //Định dạng ngày thành kiểu String
+        String exDate = String.valueOf(exprided);
+        //Đặt giá trị cho TextView
+        holder.txtHsd.setText(exDate);
     }
 
     @Override
     public int getItemCount() {
-        return dsTTSP.size();
+        return listSP.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView txtTenSP;
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView txtTensp;
+        TextView txtSlt;
         TextView txtMaLo;
-        TextView txtSLTon;
-        TextView txtHSD;
+        TextView txtHsd;
 
+        public MyViewHolder(@NonNull View itemView, Context ctx) {
+            super(itemView);
+            context = ctx;
+            txtTensp = itemView.findViewById(R.id.namePr4);
+            txtSlt = itemView.findViewById(R.id.slTon4);
+            txtMaLo = itemView.findViewById(R.id.maLo4);
+            txtHsd = itemView.findViewById(R.id.hsd4);
+        }
 
-        public MyViewHolder(@NonNull View itemView) {
-
-                super(itemView);
-                txtTenSP = itemView.findViewById(R.id.namePr1);
-                txtMaLo = itemView.findViewById(R.id.maLo1);
-                txtSLTon = itemView.findViewById(R.id.slTon1);
-                txtHSD = itemView.findViewById(R.id.hsd1);
+        @Override
+        public void onClick(View v) {
+            if (itemClick!=null){
+                itemClick.onClick(v,getAdapterPosition());
+            }
         }
     }
-
-    public void filterList(ArrayList<QLSP> filteredList) {
-        dsTTSP = filteredList;
-        notifyDataSetChanged(); // Cập nhật RecyclerView với danh sách mới
-    }
-
-
 }

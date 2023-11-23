@@ -4,7 +4,6 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,8 +14,7 @@ import android.view.View;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ViewModel.VMNewExport;
-import com.example.projecthk1_2023_2024.admin.CoordinateBar;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Export;
 import com.example.projecthk1_2023_2024.model.Product;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,10 +29,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-import kotlin.Triple;
-
 public class NewExportActivity extends AppCompatActivity implements ItemClick {
-    CoordinatorLayout coordinatorLayout;
     RecyclerView recycler;
     private CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Export");
     private FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -47,9 +42,6 @@ public class NewExportActivity extends AppCompatActivity implements ItemClick {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nvkho_func2_qlxkho_layout);
         recycler = findViewById(R.id.dspxMoi);
-        coordinatorLayout = findViewById(R.id.coordinateLayout);// :?
-        CoordinateBar.setCoordinateBar(coordinatorLayout);
-        CoordinateBar.setEventBar(getApplicationContext());
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -58,8 +50,6 @@ public class NewExportActivity extends AppCompatActivity implements ItemClick {
                         String IdDocument = document.getId();
                         Export exp = document.toObject(Export.class);
                         Product product = document.toObject(Product.class);
-//                        Pair<String, > newExpTriple = new Triple<>(IdDocument,exp, product);
-//                        listNewExp.add(newExpTriple);
                         NewExportAdapter adapter = new NewExportAdapter(NewExportActivity.this, listNewExp);
                         //adapter.sortStatus();
                         recycler.setLayoutManager(new LinearLayoutManager(NewExportActivity.this));

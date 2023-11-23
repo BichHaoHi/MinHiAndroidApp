@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.Util;
+package com.example.projecthk1_2023_2024.Util.ViewModel;
 
 import android.app.Application;
 import android.util.Pair;
@@ -7,17 +7,17 @@ import com.example.projecthk1_2023_2024.model.User;
 
 import java.util.List;
 
-public class ListUser extends Application {
+public class VMListUser extends Application {
     List<Pair<String, User>> listUser;
-    public static ListUser instance;
-    public static ListUser getInstance(){
+    public static VMListUser instance;
+    public static VMListUser getInstance(){
         if (instance == null){
-            instance = new ListUser();
+            instance = new VMListUser();
         }
         return instance;
     }
 
-    public ListUser() {
+    public VMListUser() {
     }
 
     public List<Pair<String, User>> getListUser() {

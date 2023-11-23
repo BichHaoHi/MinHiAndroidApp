@@ -9,13 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projecthk1_2023_2024.NvKho.FuncXuatHang.DetailNewExpAdapter;
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ViewModel.VMDetailNewExp;
 import com.example.projecthk1_2023_2024.Util.ViewModel.VMDetailNewImp;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 
-import java.util.Date;
 import java.util.List;
 
 public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapter.MyViewHolder>  {

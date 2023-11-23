@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.productactivity;
+package com.example.projecthk1_2023_2024.Admin.productactivity;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -16,10 +15,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ProListAd;
-import com.example.projecthk1_2023_2024.admin.AdminActivity;
-import com.example.projecthk1_2023_2024.admin.adapter.ProductAdapter;
-import com.example.projecthk1_2023_2024.admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Util.ViewModel.VMProductListAdd;
+import com.example.projecthk1_2023_2024.Admin.AdminActivity;
+import com.example.projecthk1_2023_2024.Admin.adapter.ProductAdapter;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Product;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -62,7 +61,7 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
                         Pair<String, Product> productPair = new Pair<>(IdDocument,product);
                         listProduct.add(productPair);
                     }
-                    ProListAd proListAd = ProListAd.getInstance();
+                    VMProductListAdd proListAd = VMProductListAdd.getInstance();
                     proListAd.setProductList(listProduct);
                     recyclerView.setLayoutManager(new LinearLayoutManager(ProductAdminActivity.this));
                     ProductAdapter adapter = new ProductAdapter(ProductAdminActivity.this,listProduct);
