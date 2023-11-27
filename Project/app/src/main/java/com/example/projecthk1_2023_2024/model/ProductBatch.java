@@ -7,24 +7,26 @@ import java.util.Date;
 
 public class ProductBatch {
     private int Quantity;
+    private int Quantity_Valid;
     private Timestamp ExpiryDate;
     private boolean Enable;
     private double ImportPrice;
-    private DocumentReference IdProduct;
-    private DocumentReference IdShelf;
-    private DocumentReference IdBatch;
+    private DocumentReference IDProduct;
+    private DocumentReference IDShelf;
+    private DocumentReference IDBatch;
 
     public ProductBatch() {
     }
 
-    public ProductBatch(int quantity, Timestamp expiryDate, boolean enable, double importPrice, DocumentReference idProduct, DocumentReference idShelf, DocumentReference idBatch) {
-        Quantity = quantity;
-        ExpiryDate = expiryDate;
-        Enable = enable;
-        ImportPrice = importPrice;
-        IdProduct = idProduct;
-        IdShelf = idShelf;
-        IdBatch = idBatch;
+    public ProductBatch(int Quantity,int Quantity_Valid ,Timestamp ExpiryDate, boolean Enable, double ImportPrice, DocumentReference IDProduct, DocumentReference IDShelf, DocumentReference IDBatch) {
+        this.Quantity = Quantity;
+        this.Quantity_Valid = Quantity_Valid;
+        this.ExpiryDate = ExpiryDate;
+        this.Enable = Enable;
+        this.ImportPrice = ImportPrice;
+        this.IDProduct = IDProduct;
+        this.IDShelf = IDShelf;
+        this.IDBatch = IDBatch;
     }
 
     public int getQuantity() {
@@ -59,27 +61,35 @@ public class ProductBatch {
         ImportPrice = importPrice;
     }
 
-    public DocumentReference getIdProduct() {
-        return IdProduct;
+    public DocumentReference getIDProduct() {
+        return IDProduct;
     }
 
-    public void setIdProduct(DocumentReference idProduct) {
-        IdProduct = idProduct;
+    public void setIDProduct(DocumentReference IDProduct) {
+        this.IDProduct = IDProduct;
     }
 
-    public DocumentReference getIdShelf() {
-        return IdShelf;
+    public DocumentReference getIDShelf() {
+        return IDShelf;
     }
 
-    public void setIdShelf(DocumentReference idShelf) {
-        IdShelf = idShelf;
+    public void setIDShelf(DocumentReference IDShelf) {
+        this.IDShelf = IDShelf;
     }
 
-    public DocumentReference getIdBatch() {
-        return IdBatch;
+    public DocumentReference getIDBatch() {
+        return IDBatch;
     }
 
-    public void setIdBatch(DocumentReference idBatch) {
-        IdBatch = idBatch;
+    public void setIDBatch(DocumentReference IDBatch) {
+        this.IDBatch = IDBatch;
+    }
+
+    public int getQuantity_Valid() {
+        return Quantity_Valid;
+    }
+
+    public void setQuantity_Valid(int quantity_Valid) {
+        Quantity_Valid = quantity_Valid;
     }
 }

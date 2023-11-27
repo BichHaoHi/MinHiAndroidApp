@@ -5,17 +5,17 @@ public class Product {
     String Link_Photo;
     int Quantity;
     int Quantity_Valid;
-    int Quantity_stock;
+    int Quantity_Stock;
 
     public Product() {
     }
 
-    public Product(String name, String link_Photo, int quantity, int quantity_Valid, int quantity_stock) {
-        Name = name;
-        Link_Photo = link_Photo;
-        Quantity = quantity;
-        Quantity_Valid = quantity_Valid;
-        Quantity_stock = quantity_stock;
+    public Product(String Name, String Link_Photo, int Quantity, int Quantity_Valid, int Quantity_Stock) {
+        this.Name = Name;
+        this.Link_Photo = Link_Photo;
+        this.Quantity = Quantity;
+        this.Quantity_Valid = Quantity_Valid;
+        this.Quantity_Stock = Quantity_Stock;
     }
 
     public String getName() {
@@ -50,11 +50,11 @@ public class Product {
         Quantity_Valid = quantity_Valid;
     }
 
-    public int getQuantity_stock() {
-        return Quantity_stock;
+    public int getQuantity_Stock() {
+        return Quantity_Stock;
     }
 
-    public void setQuantity_stock(int quantity_stock) {
-        Quantity_stock = quantity_stock;
+    public void setQuantity_Stock(int quantity_stock) {
+        Quantity_Stock = quantity_stock;
     }
 }

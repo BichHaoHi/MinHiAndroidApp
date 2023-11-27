@@ -70,7 +70,6 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
                     recyclerView.setAdapter(adapter);
                     adapter.setClickListener(UserAdminActivity.this);
                     recyclerView.getAdapter().notifyDataSetChanged();
-
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());
                 }
@@ -88,8 +87,11 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
 
     @Override
     public void onClick(View v,int pos) {
-        Intent i = new Intent(this, UserDetailActivity.class);
-        i.putExtra("IdUser", listUser.get(pos).first);
-        startActivity(i);
+        Pair<String, User> userPair = listUser.get(pos);
+        if (!userPair.second.getRole().equals("Admin")) {
+            Intent i = new Intent(this, UserDetailActivity.class);
+            i.putExtra("IdUser", listUser.get(pos).first);
+            startActivity(i);
+        }
     }
 }

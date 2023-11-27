@@ -12,10 +12,10 @@ public class Shelf extends BaseObservable {
     public Shelf() {
     }
 
-    public Shelf(String name, DocumentReference ID_Zone, boolean enable) {
-        Name = name;
+    public Shelf(String Name, DocumentReference ID_Zone, boolean Enable) {
+        this.Name = Name;
         this.ID_Zone = ID_Zone;
-        Enable = enable;
+        this.Enable = Enable;
     }
 
     public String getName() {

@@ -38,7 +38,6 @@ public class NotificationAdminActivity extends AppCompatActivity implements Item
     private List<Pair<String, Notification>> listNotification = new ArrayList<>();
 
 
-    @SuppressLint("MissingInflatedId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -10,10 +10,10 @@ public class Zone extends BaseObservable {
     public Zone() {
     }
 
-    public Zone(int total, boolean enable, String name) {
-        Total = total;
-        Enable = enable;
-        Name = name;
+    public Zone(int Total, boolean Enable, String Name) {
+        this.Total = Total;
+        this.Enable = Enable;
+        this.Name = Name;
     }
 
     public int getTotal() {

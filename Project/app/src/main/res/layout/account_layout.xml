@@ -58,10 +58,12 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/consAvt_Edit"
                 android:layout_width="291dp"
-                android:layout_height="92dp"
+                android:layout_height="0dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="499dp"
                 android:background="@drawable/round2corner_top"
                 android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -190,12 +192,12 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textEmail"
+                    android:id="@+id/textPostcode"
                     android:layout_width="268dp"
                     android:layout_height="24dp"
                     android:layout_marginTop="260dp"
                     android:gravity="left"
-                    android:text="Email"
+                    android:text="PostCode"
                     android:textColor="#3D3C3C"
                     android:textSize="18dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -205,18 +207,18 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/email"
+                    android:id="@+id/postcode"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="4dp"
                     android:background="@drawable/round4corner_border"
                     android:gravity="center"
-                    android:text="nguyenthibichhao.ntbh@gmail.com"
+                    android:text="08090908090"
                     android:textSize="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/textPostcode"
                     tools:ignore="MissingConstraints" />
 
                 <TextView
@@ -250,12 +252,12 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textPos"
+                    android:id="@+id/textAddress"
                     android:layout_width="268dp"
                     android:layout_height="24dp"
                     android:layout_marginTop="425dp"
                     android:gravity="left"
-                    android:text="Position"
+                    android:text="Address"
                     android:textColor="#3D3C3C"
                     android:textSize="18dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -265,22 +267,33 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/pos"
+                    android:id="@+id/address"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:background="@drawable/round4corner_border"
                     android:gravity="center"
-                    android:text="Thủ kho"
+                    android:text=""
                     android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.551"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textPos"
+                    app:layout_constraintTop_toBottomOf="@+id/textAddress"
                     tools:ignore="MissingConstraints" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Xóa nhân viên"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/consAvt_Edit" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

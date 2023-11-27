@@ -5,6 +5,10 @@ import androidx.databinding.Bindable;
 
 import com.google.firebase.Timestamp;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class User extends BaseObservable {
     private String Address;
     private Timestamp Birthday;
@@ -144,5 +148,10 @@ public class User extends BaseObservable {
 
     public void setStart_Date(Timestamp start_Date) {
         Start_Date = start_Date;
+    }
+    public String StampToString(Timestamp timestamp) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        Date date = timestamp.toDate();
+        return dateFormat.format(date);
     }
 }

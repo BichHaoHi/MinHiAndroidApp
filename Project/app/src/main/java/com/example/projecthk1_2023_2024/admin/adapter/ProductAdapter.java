@@ -45,7 +45,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         Pair<String, Product> productPair = listProduct.get(position);
         holder.nameView.setText(productPair.second.getName());
         holder.totalView.setText(String.valueOf(productPair.second.getQuantity()));
-        holder.stockView.setText(String.valueOf(productPair.second.getQuantity_stock()));
+        holder.stockView.setText(String.valueOf(productPair.second.getQuantity_Stock()));
         /**
          *  Using Glide Library to Display the images
          * */

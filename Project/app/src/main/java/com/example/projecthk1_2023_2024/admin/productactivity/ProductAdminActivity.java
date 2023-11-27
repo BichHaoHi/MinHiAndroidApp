@@ -77,6 +77,8 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
 
     @Override
     public void onClick(View v, int pos) {
-
+        Intent i = new Intent(ProductAdminActivity.this,DetailProductActivity.class);
+        i.putExtra("IdProduct",listProduct.get(pos).first);
+        startActivity(i);
     }
 }

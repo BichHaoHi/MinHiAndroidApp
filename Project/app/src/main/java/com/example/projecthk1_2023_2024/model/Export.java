@@ -12,11 +12,11 @@ public class Export {
     private DocumentReference IDUser_confirm;
     public Export(){}
 
-    public Export(Timestamp create_Date, String status, boolean enable, Timestamp date_Success, DocumentReference IDUser_confirm) {
-        Create_Date = create_Date;
-        Status = status;
-        Enable = enable;
-        Date_Success = date_Success;
+    public Export(Timestamp Create_Date, String Status, boolean Enable, Timestamp Date_Success, DocumentReference IDUser_confirm) {
+        this.Create_Date = Create_Date;
+        this.Status = Status;
+        this.Enable = Enable;
+        this.Date_Success = Date_Success;
         this.IDUser_confirm = IDUser_confirm;
     }
 

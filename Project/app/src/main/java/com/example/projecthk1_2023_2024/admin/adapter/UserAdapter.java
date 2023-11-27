@@ -53,6 +53,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         Pair<String, User> user = listUser.get(position);
         holder.name.setText(user.second.getUserName());
         holder.email.setText(user.second.getEmail());
+        holder.create_date.setText(user.second.StampToString(user.second.getStart_Date()));
         String imageUrl = user.second.getImage();
         /**
          *  Using Glide Library to Display the images
@@ -79,7 +80,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     }
 
     public class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name, email, enable,disable;
+        TextView name, email, enable,disable, create_date;
         ImageView img;
 
         public UserViewHolder(@NonNull View itemView, Context cxt) {
@@ -90,6 +91,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
             enable = itemView.findViewById(R.id.status_nv_enable);
             disable = itemView.findViewById(R.id.status_nv_disable);
             img = itemView.findViewById(R.id.avt_nv);
+            create_date = itemView.findViewById(R.id.textDate_start);
             itemView.setOnClickListener(this);
         }
 
