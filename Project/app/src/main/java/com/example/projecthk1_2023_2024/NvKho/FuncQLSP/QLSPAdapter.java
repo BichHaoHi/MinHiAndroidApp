@@ -1,6 +1,7 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncQLSP;
 
 import android.content.Context;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ViewModel.VMQlsp;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.model.Product;
 import com.google.firebase.Timestamp;
 
 import java.util.Date;
@@ -20,9 +22,9 @@ import java.util.List;
 public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> {
     Context context;
     ItemClick itemClick;
-    private List<VMQlsp> listSP;
+    private List<Pair<String, Product>> listSP;
 
-    public QLSPAdapter(Context context, List<VMQlsp> listSP) {
+    public QLSPAdapter(Context context, List<Pair<String, Product>> listSP) {
         this.context = context;
         this.listSP = listSP;
     }
@@ -41,16 +43,16 @@ public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull QLSPAdapter.MyViewHolder holder, int position) {
-        VMQlsp SPPair = listSP.get(position);
-        holder.txtTensp.setText(SPPair.getProductPair4().second.getName());
-        holder.txtSlt.setText(SPPair.getProductPair4().second.getQuantity());
-        holder.txtMaLo.setText(SPPair.getBatchPair4().first);
+        Pair<String, Product> SPPair = listSP.get(position);
+        holder.txtTensp.setText(SPPair.second.getName());
+        holder.txtSlt.setText(SPPair.second.getQuantity());
+//        holder.txtMaLo.setText(SPPair.first);
 
-        Timestamp exprided = SPPair.getBatchPair4().second.getExpiryDate();
+//        Timestamp exprided = SPPair.getBatchPair4().second.getExpiryDate();
         //Định dạng ngày thành kiểu String
-        String exDate = String.valueOf(exprided);
+//        String exDate = String.valueOf(exprided);
         //Đặt giá trị cho TextView
-        holder.txtHsd.setText(exDate);
+//        holder.txtHsd.setText(exDate);
     }
 
     @Override

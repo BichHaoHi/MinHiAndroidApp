@@ -39,7 +39,7 @@ public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference CRefBatch = db.collection("ProductBatch");
-    private List<VMQlsp> listPr = new ArrayList<>();
+//    private List<VMQlsp> listPr = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,9 +100,9 @@ public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(llm);
 
-        QLSPAdapter adapter = new QLSPAdapter(Func_QLSPActivity.this, listPr);
-        recyclerView.setAdapter(adapter);
-        adapter.setClickListener(Func_QLSPActivity.this);
-        adapter.notifyDataSetChanged();
+//        QLSPAdapter adapter = new QLSPAdapter(Func_QLSPActivity.this, listPr);
+//        recyclerView.setAdapter(adapter);
+//        adapter.setClickListener(Func_QLSPActivity.this);
+//        adapter.notifyDataSetChanged();
     }
 }

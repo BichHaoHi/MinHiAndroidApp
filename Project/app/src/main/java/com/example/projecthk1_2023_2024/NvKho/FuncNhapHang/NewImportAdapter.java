@@ -62,7 +62,7 @@ public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyVi
             super(itemView);
             context = ctx;
             txtMapn = itemView.findViewById(R.id.mapn3);
-            txtTensp = itemView.findViewById(R.id.tensp3);
+//            txtTensp = itemView.findViewById(R.id.tensp3);
             txtTTNhap = itemView.findViewById(R.id.ttnhap3);
         }
 

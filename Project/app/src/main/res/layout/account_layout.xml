@@ -63,7 +63,6 @@
                 android:layout_marginBottom="499dp"
                 android:background="@drawable/round2corner_top"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">

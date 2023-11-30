@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.example.projecthk1_2023_2024"
         minSdk = 19
+        multiDexEnabled = true
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
