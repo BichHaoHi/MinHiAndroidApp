@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActiFunc_Nhap_TKho"
+
     android:background="#76a5dd">
 
 
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Danh sách phiếu nhập mới"
+            android:text="Danh sách phiếu nhập"
             android:textColor="#ffffff"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"

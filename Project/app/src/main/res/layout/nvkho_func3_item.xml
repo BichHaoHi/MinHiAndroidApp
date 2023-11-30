@@ -8,24 +8,23 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_phieu"
         android:layout_width="390dp"
-        android:layout_height="175dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/border_phieu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="136dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="16dp"
-            android:text="Mã PN:\n \nTên mặt hàng:\n \nTình trạng:"
+            android:layout_height="200dp"
+            android:text="Mã PN:\n \nNhà cung cấp:\n \nTình trạng:\n \n Số lượng:"
             android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -34,8 +33,7 @@
             android:id="@+id/mapn3"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
             android:text="PN001"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
@@ -43,11 +41,10 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tensp3"
+            android:id="@+id/ncc3"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginStart="16dp"
             android:text="Sửa rửa mặt"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
@@ -58,12 +55,25 @@
             android:id="@+id/ttnhap3"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="16dp"
             android:text="Đã đến/Đang vận chuyển"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/tensp3"
+            app:layout_constraintTop_toBottomOf="@+id/ncc3"
             tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/slnhap3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="100"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/ttnhap3"
+            tools:ignore="MissingConstraints" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,21 +7,19 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 
-import org.w3c.dom.Document;
-
-public class Exp_Batch {
+public class ExpBatch {
 
     private DocumentReference IdProductBatch;
     private DocumentReference IDExport;
     private int quantity;
 
-    public Exp_Batch(DocumentReference IdProductBatch, DocumentReference IDExport, int quantity) {
+    public ExpBatch(DocumentReference IdProductBatch, DocumentReference IDExport, int quantity) {
         this.IdProductBatch = IdProductBatch;
         this.IDExport = IDExport;
         this.quantity = quantity;
     }
 
-    public Exp_Batch() {
+    public ExpBatch() {
     }
 
     public int getQuantity() {

@@ -28,6 +28,10 @@
             android:exported="false"/>
         <activity android:name=".Admin.activityuser.AddUserActivity"
             android:exported="false"/>
+        <activity android:name=".Admin.productactivity.DetailProductActivity"
+            android:exported="false"/>
+        <activity android:name=".Admin.activityuser.EditUserActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -68,17 +68,37 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageView
                     android:id="@+id/avt"
-                    android:layout_width="272dp"
-                    android:layout_height="63dp"
-                    android:layout_marginStart="4dp"
+                    android:layout_width="82dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/avt"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintCircleAngle="90"
+                    app:layout_constraintCircleRadius="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
 
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:backgroundTint="#00FFFFFF"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.585"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_cam"
+                    tools:ignore="MissingConstraints" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/inf"

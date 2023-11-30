@@ -36,8 +36,8 @@ public class DetailProductAdapter extends RecyclerView.Adapter<DetailProductAdap
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Pair<String, ProductBatch> productBatchPair = listProductBatch.get(position);
         holder.maLo.setText(productBatchPair.first);
-        holder.sl.setText(productBatchPair.second.getQuantity());
-        holder.slValid.setText(productBatchPair.second.getQuantity_Valid());
+        holder.sl.setText(String.valueOf(productBatchPair.second.getQuantity()));
+        holder.slValid.setText(String.valueOf(productBatchPair.second.getQuantity_Valid()));
     }
 
     @Override

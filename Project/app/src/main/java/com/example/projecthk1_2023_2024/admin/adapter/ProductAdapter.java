@@ -73,6 +73,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
             totalView = itemView.findViewById(R.id.totalView);
             stockView = itemView.findViewById(R.id.stockView);
             img = itemView.findViewById(R.id.imgSP);
+            itemView.setOnClickListener(this);
         }
 
         @Override

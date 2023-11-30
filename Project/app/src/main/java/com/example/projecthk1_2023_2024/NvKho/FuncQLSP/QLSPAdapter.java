@@ -67,8 +67,8 @@ public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> 
         public MyViewHolder(@NonNull View itemView, Context ctx) {
             super(itemView);
             context = ctx;
-            txtTensp = itemView.findViewById(R.id.namePr4);
-            txtSlt = itemView.findViewById(R.id.slTon4);
+            txtTensp = itemView.findViewById(R.id.slht4);
+            txtSlt = itemView.findViewById(R.id.sltt4);
             txtMaLo = itemView.findViewById(R.id.maLo4);
             txtHsd = itemView.findViewById(R.id.hsd4);
         }

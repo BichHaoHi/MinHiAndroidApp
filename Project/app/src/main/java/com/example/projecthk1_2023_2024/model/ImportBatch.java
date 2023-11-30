@@ -3,9 +3,7 @@ package com.example.projecthk1_2023_2024.model;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 
-import java.util.Date;
-
-public class Import_Batch {
+public class ImportBatch {
     private Timestamp Date;
     private boolean Enable;
     private Timestamp Date_success;
@@ -14,10 +12,10 @@ public class Import_Batch {
     private String Supplier;
     private DocumentReference IDUser;
 
-    public Import_Batch() {
+    public ImportBatch() {
     }
 
-    public Import_Batch(Timestamp Date, boolean Enable, Timestamp Date_success, String Status, int Quantity_import, String Supplier, DocumentReference IDUser) {
+    public ImportBatch(Timestamp Date, boolean Enable, Timestamp Date_success, String Status, int Quantity_import, String Supplier, DocumentReference IDUser) {
         this.Date = Date;
         this.Enable = Enable;
         this.Date_success = Date_success;
