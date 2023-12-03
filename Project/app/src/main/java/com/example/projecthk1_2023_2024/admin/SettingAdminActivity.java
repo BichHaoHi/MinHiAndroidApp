@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.Admin;
+package com.example.projecthk1_2023_2024.admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class SettingAdminActivity extends AppCompatActivity  {
+public class SettingAdminActivity extends AppCompatActivity  {// extends Fragment mới dùng được Fragmnet
     ImageView img, back;
     TextView nameView, phoneView, sexView, startView, roleView;
     Button btnLogOut;

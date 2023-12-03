@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.example.projecthk1_2023_2024.NvKho.NvkActivity;
 import com.example.projecthk1_2023_2024.Util.AuUser;
-import com.example.projecthk1_2023_2024.Admin.AdminActivity;
+import com.example.projecthk1_2023_2024.admin.AdminHomeActivity;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                                     auUser.setUser(user);
                                                     Log.d(TAG,role);
                                                     if ("Admin".equals(role) && user.getEnable()) {
-                                                        startActivity(new Intent(MainActivity.this, AdminActivity.class));
+                                                        startActivity(new Intent(MainActivity.this, AdminHomeActivity.class));
                                                     } else if ("Kho".equals(role) && user.getEnable()) {
                                                         startActivity(new Intent(MainActivity.this, NvkActivity.class));
                                                     }

@@ -212,8 +212,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="399dp"
-            android:layout_height="284dp"
+            android:layout_width="418dp"
+            android:layout_height="393dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/recycleview"
             android:orientation="vertical"
@@ -224,7 +224,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="372dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/notification"
@@ -238,8 +238,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-
-        <include layout="@layout/coordinate_layout"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

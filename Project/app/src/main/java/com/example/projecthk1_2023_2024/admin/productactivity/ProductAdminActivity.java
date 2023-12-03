@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.Admin.productactivity;
+package com.example.projecthk1_2023_2024.admin.productactivity;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ProductListAdd;
-import com.example.projecthk1_2023_2024.Admin.AdminActivity;
+import com.example.projecthk1_2023_2024.admin.AdminHomeActivity;
 import com.example.projecthk1_2023_2024.Admin.adapter.ProductAdapter;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Product;
@@ -48,7 +48,7 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProductAdminActivity.this, AdminActivity.class));
+                startActivity(new Intent(ProductAdminActivity.this, AdminHomeActivity.class));
             }
         });
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -77,7 +77,7 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
 
     @Override
     public void onClick(View v, int pos) {
-        Intent i = new Intent(ProductAdminActivity.this,DetailProductActivity.class);
+        Intent i = new Intent(ProductAdminActivity.this, com.example.projecthk1_2023_2024.Admin.productactivity.DetailProductActivity.class);
         i.putExtra("IdProduct",listProduct.get(pos).first);
         i.putExtra("nameProduct",listProduct.get(pos).second.getName());
         startActivity(i);
