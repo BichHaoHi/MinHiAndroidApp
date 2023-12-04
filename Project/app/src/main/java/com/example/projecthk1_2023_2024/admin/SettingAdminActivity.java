@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;

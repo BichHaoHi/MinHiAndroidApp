@@ -1,7 +1,8 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,10 +14,7 @@ public class AdminActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_frag_main);
-
-        Intent i = new Intent(this, CoordinateBar.class);
+        Intent i = new Intent(this, FragmentAdmin.class);
         startActivity(i);
-
-
     }
 }

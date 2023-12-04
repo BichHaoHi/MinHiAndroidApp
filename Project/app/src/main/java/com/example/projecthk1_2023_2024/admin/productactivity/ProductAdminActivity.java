@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.productactivity;
+package com.example.projecthk1_2023_2024.Admin.productactivity;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ProductListAdd;
-import com.example.projecthk1_2023_2024.admin.AdminHomeActivity;
+import com.example.projecthk1_2023_2024.Admin.AdminHomeActivity;
 import com.example.projecthk1_2023_2024.Admin.adapter.ProductAdapter;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Product;

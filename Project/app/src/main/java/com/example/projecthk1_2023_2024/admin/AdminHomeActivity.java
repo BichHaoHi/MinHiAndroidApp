@@ -1,8 +1,7 @@
-package com.example.projecthk1_2023_2024.admin;
+package com.example.projecthk1_2023_2024.Admin;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
@@ -16,15 +15,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
+import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
-import com.example.projecthk1_2023_2024.Admin.activityuser.UserAdminActivity;
-import com.example.projecthk1_2023_2024.Admin.productactivity.ProductAdminActivity;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -41,13 +40,11 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeAdminActivity extends Fragment {// nhớ thay các fragment con extends Fragment mới
-    CoordinatorLayout coordinatorLayout;
+public class AdminHomeActivity extends Fragment implements ItemClick {
     ImageView imgUser;
     TextView textView;
     FrameLayout nhanVien, nhapHang, xuatHang, product;
     RecyclerView recyclerView;
-    //    AdminHomeBinding adminHomeBinding;
     private User user;
     private List<Pair<String, Notification>> notificationList = new ArrayList<>();
     private FirebaseAuth firebaseAuth;
@@ -56,9 +53,10 @@ public class HomeAdminActivity extends Fragment {// nhớ thay các fragment con
     private CollectionReference collectionReferenceNotification = db.collection("Notification");
     private CollectionReference collectionReferenceUser = db.collection("User");
     private FirebaseUser currentUser;
+    @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.admin_home, container, false);
+        View view = inflater.inflate(R.layout.admin_home,container,false);
         nhanVien = view.findViewById(R.id.frameLayout1);
         nhapHang = view.findViewById(R.id.frameLayout3);
         xuatHang = view.findViewById(R.id.frameLayout4);
@@ -80,20 +78,20 @@ public class HomeAdminActivity extends Fragment {// nhớ thay các fragment con
                             notificationList.add(notificationPair);
                         }
                     }
-                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-                    recyclerView.setAdapter(new com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter(getContext(), notificationList));
+                    LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+                    recyclerView.setLayoutManager(layoutManager);
+                    recyclerView.setAdapter(new NotificationAdapter(getActivity(), notificationList));
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());
                 }
             }
         });
-
         collectionReferenceUser.whereEqualTo("LoginID",loginId)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                         if (error != null){
-                            Toast.makeText(getContext(), error.getMessage() + "Line 97", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), error.getMessage() + "Line 97", Toast.LENGTH_SHORT).show();
                         }
                         assert value != null;
                         if (!value.isEmpty()){
@@ -125,33 +123,11 @@ public class HomeAdminActivity extends Fragment {// nhớ thay các fragment con
                 }
             }
         });
-
-        nhanVien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), UserAdminActivity.class));
-            }
-        });
-        nhapHang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                startActivity();
-
-            }
-        });
-        xuatHang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                startActivity();
-
-            }
-        });
-        product.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), ProductAdminActivity.class));
-            }
-        });
         return view;
+    }
+
+    @Override
+    public void onClick(View v, int pos) {
+
     }
 }

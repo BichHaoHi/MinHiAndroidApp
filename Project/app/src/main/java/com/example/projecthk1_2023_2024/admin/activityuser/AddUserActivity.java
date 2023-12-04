@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.admin.activityuser;
+package com.example.projecthk1_2023_2024.Admin.activityuser;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
