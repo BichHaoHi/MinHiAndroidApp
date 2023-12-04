@@ -33,8 +33,6 @@
             android:exported="false"/>
         <activity android:name=".Admin.activityuser.EditUserActivity"
             android:exported="false"/>
-        <activity android:name=".Admin.AdminActivity"
-            android:exported="false"/>
         <activity android:name=".Admin.FragmentAdmin"
             android:exported="false"/>
         <activity
