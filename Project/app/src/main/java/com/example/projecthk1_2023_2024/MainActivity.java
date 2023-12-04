@@ -7,7 +7,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,10 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.projecthk1_2023_2024.Admin.AdminActivity;
+import com.example.projecthk1_2023_2024.Admin.FragmentAdmin;
 import com.example.projecthk1_2023_2024.NvKho.NvkActivity;
 import com.example.projecthk1_2023_2024.Util.AuUser;
-import com.example.projecthk1_2023_2024.Admin.AdminHomeActivity;
 import com.example.projecthk1_2023_2024.model.User;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -96,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                                                     auUser.setUser(user);
                                                     Log.d(TAG,role);
                                                     if ("Admin".equals(role) && user.getEnable()) {
-                                                        startActivity(new Intent(MainActivity.this, AdminActivity.class));
+                                                        startActivity(new Intent(MainActivity.this, FragmentAdmin.class));
                                                     } else if ("Kho".equals(role) && user.getEnable()) {
                                                         startActivity(new Intent(MainActivity.this, NvkActivity.class));
                                                     }
