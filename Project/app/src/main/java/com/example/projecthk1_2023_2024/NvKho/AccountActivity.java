@@ -23,7 +23,7 @@ public class AccountActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AccountActivity.this, NvkFragMain.class);
+                Intent i = new Intent(AccountActivity.this, NvkActivity.class);
                 startActivity(i);
             }
         });

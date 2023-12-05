@@ -34,7 +34,7 @@ public class NvkFragSetting extends Fragment {
 
 
     ImageView img, back, imgHome, imgSetting;
-    TextView nameView, phoneView, sexView, startView, roleView;
+    TextView nameView, phoneView, sexView, startView, roleView, emailView;
     Button btnLogOut;
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     @SuppressLint("MissingInflatedId")
@@ -42,6 +42,7 @@ public class NvkFragSetting extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.detail_nv, container, false);
         img = view.findViewById(R.id.avt_nv);
+        emailView = view.findViewById(R.id.Text_mail);
         phoneView = view.findViewById(R.id.Text_phone);
         nameView = view.findViewById(R.id.Name);
         sexView = view.findViewById(R.id.Text_sex);
@@ -71,7 +72,7 @@ public class NvkFragSetting extends Fragment {
                 .load(user.getImage())
                 .fitCenter()
                 .into(img);
-
+        emailView.setText(user.getEmail());
         nameView.setText(user.getUserName());
         phoneView.setText(user.getPhone());
         sexView.setText(user.getSex());

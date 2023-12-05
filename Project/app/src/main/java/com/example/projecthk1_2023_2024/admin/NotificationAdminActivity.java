@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NotificationAdminActivity extends Fragment implements ItemClick {
-    CoordinatorLayout coordinatorLayout;
+
     RecyclerView recyclerView;
     private CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Notification");
     private FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();

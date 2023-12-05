@@ -33,12 +33,12 @@ public class UserDetailActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_layout);
-        nameView = findViewById(R.id.name);
-        addressView = findViewById(R.id.address);
-        phoneView = findViewById(R.id.phone);
-        postView = findViewById(R.id.postcode);
-        sexView = findViewById(R.id.sex);
-        birthView = findViewById(R.id.bir);
+        nameView = findViewById(R.id.namea);
+        addressView = findViewById(R.id.addressa);
+        phoneView = findViewById(R.id.phonea);
+        postView = findViewById(R.id.postcodea);
+        sexView = findViewById(R.id.sexa);
+        birthView = findViewById(R.id.bira);
         back = findViewById(R.id.back_homeA);
         del = findViewById(R.id.buttonDelete);
         String idUser = getIntent().getStringExtra("IdUser");

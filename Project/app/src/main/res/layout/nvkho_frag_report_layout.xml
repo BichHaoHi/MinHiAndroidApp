@@ -8,9 +8,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Fragment_Report"
+        android:layout_marginTop="15dp"
         android:background="@color/background"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Fragment_Report">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -31,40 +35,36 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/name"
-                android:layout_width="246dp"
-                android:layout_height="41dp"
-                android:text="Bich Hao"
-                android:textColor="#ffffff"
-                android:textSize="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.31"
+                android:id="@+id/nameReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imgAvt"
                 app:layout_constraintStart_toEndOf="@+id/imgAvt"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.037"
-                tools:ignore="MissingConstraints" />
+                app:layout_constraintTop_toTopOf="@+id/imgAvt" />
 
             <TextView
                 android:id="@+id/textReport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="115dp"
+                android:layout_marginTop="124dp"
                 android:text="THỐNG KÊ"
                 android:textColor="#ffffff"
                 android:textSize="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.479"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/name"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/consNotice"
                 android:layout_width="409dp"
-                android:layout_height="550dp"
+                android:layout_height="515dp"
                 android:layout_marginTop="192dp"
                 android:background="@drawable/main_edit"
                 android:textAlignment="center"
