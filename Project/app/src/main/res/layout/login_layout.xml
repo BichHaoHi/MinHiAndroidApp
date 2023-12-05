@@ -60,6 +60,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
+            android:gravity="center_vertical|center_horizontal"
             android:layout_below="@id/imgStore"
             />
 
@@ -69,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:hint="Password:"
+            android:gravity="center_vertical|center_horizontal"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"

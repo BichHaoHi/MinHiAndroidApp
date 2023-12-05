@@ -7,8 +7,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_phieu"
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="230dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
@@ -22,7 +23,7 @@
             android:id="@+id/textView"
             android:layout_width="153dp"
             android:layout_height="220dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
             android:text="Mã lô:\n \nHSD:\n \nSL hệ thống:\n \nSL thực tế:\n"
             android:textSize="20dp"
@@ -35,10 +36,11 @@
             android:id="@+id/maLo4"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginTop="16dp"
             android:text="LX2345"
             android:textSize="20dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <TextView

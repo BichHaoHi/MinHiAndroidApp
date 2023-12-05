@@ -48,8 +48,9 @@
             android:exported="false"/>
         <activity android:name=".NvKho.AccountActivity"
             android:exported="false"/>
-        <activity android:name=".NvKho.NvkFragMain"
+        <activity android:name=".NvKho.FuncQLSP.Func_QLSPActivity"
             android:exported="false"/>
+
 
 
     </application>

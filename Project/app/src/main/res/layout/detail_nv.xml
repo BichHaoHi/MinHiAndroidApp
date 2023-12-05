@@ -3,13 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f2f1f6"
+    >
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#76A0DD"
+        android:background="@color/background"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,10 +24,10 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="70dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/avt"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,14 +70,15 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
+    </LinearLayout
+        >
 
     <ImageView
         android:id="@+id/mail"
         android:layout_width="43dp"
         android:layout_height="47dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="34dp"
         android:src="@drawable/mail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
@@ -85,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="42dp"
         android:text="mineral123321@gmail.com"
         android:textSize="16dp"
         app:layout_constraintStart_toEndOf="@+id/mail"
@@ -187,12 +190,11 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/color_button"
         android:text="Log out"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.898"
-        android:backgroundTint="@color/color_button"/>
+        app:layout_constraintTop_toBottomOf="@+id/Text_role" />
 </androidx.constraintlayout.widget.ConstraintLayout>
