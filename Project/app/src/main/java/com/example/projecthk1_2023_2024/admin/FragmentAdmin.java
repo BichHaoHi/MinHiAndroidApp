@@ -74,7 +74,7 @@ public class FragmentAdmin extends AppCompatActivity {
                 imgSetting.setImageResource(R.drawable.ic_menu);
 
 
-                loadFragment(new ReportAdminActivity());
+                loadFragment(new NotificationAdminActivity());
             }
         });
         setting.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +86,7 @@ public class FragmentAdmin extends AppCompatActivity {
                 imgSetting.setImageResource(R.drawable.ic_menu_run);
 
 
-                loadFragment(new ReportAdminActivity());
+                loadFragment(new SettingAdminActivity());
             }
         });
         scan.setOnClickListener(new View.OnClickListener() {

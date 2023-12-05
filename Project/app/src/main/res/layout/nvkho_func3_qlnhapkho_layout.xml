@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Phieeus nhap moiws"
+            android:text="Phiếu nhập kho"
             android:textColor="#ffffff"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
             app:layout_constraintVertical_bias="0.178" />
 
         <ImageView
-            android:id="@+id/seach"
+            android:id="@+id/search"
             android:layout_width="299dp"
             android:layout_height="47dp"
             android:layout_marginTop="16dp"
@@ -52,35 +52,37 @@
             android:paddingLeft="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textNhap"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints,NotSibling" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/ic_search"
             android:layout_width="29dp"
             android:layout_height="27dp"
             android:src="@drawable/ic_search"
-            app:layout_constraintBottom_toBottomOf="@+id/seach"
-            app:layout_constraintEnd_toEndOf="@+id/seach"
+            app:layout_constraintBottom_toBottomOf="@+id/search"
+            app:layout_constraintEnd_toEndOf="@+id/search"
             app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="@+id/seach"
-            app:layout_constraintTop_toTopOf="@+id/seach"
+            app:layout_constraintStart_toStartOf="@+id/search"
+            app:layout_constraintTop_toTopOf="@+id/search"
             app:layout_constraintVertical_bias="0.423"
             tools:ignore="MissingConstraints" />
 
-        <TextView
+        <EditText
             android:id="@+id/func_search"
             android:layout_width="218dp"
             android:layout_height="30dp"
+            android:layout_marginStart="41dp"
             android:layout_marginEnd="40dp"
-            android:layout_marginBottom="8dp"
             android:hint="Search"
-            app:layout_constraintBottom_toBottomOf="@+id/seach"
-            app:layout_constraintEnd_toEndOf="@+id/seach"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/search"
+            app:layout_constraintEnd_toEndOf="@+id/search"
+            app:layout_constraintStart_toStartOf="@+id/search"
+            app:layout_constraintTop_toTopOf="@+id/search"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
