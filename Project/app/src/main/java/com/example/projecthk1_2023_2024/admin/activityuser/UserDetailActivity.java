@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.projecthk1_2023_2024.Admin.FragmentAdmin;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
 import com.example.projecthk1_2023_2024.Admin.activityuser.UserAdminActivity;
@@ -73,7 +74,7 @@ public class UserDetailActivity extends AppCompatActivity {
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG, "DocumentSnapshot successfully deleted!");
 
-                                    // Intent về HomeAdminActivity
+
                                     Intent intent = new Intent(UserDetailActivity.this, UserAdminActivity.class);
                                     startActivity(intent);
 
@@ -93,13 +94,13 @@ public class UserDetailActivity extends AppCompatActivity {
             back.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onBackPressed();
+                    startActivity(new Intent(UserDetailActivity.this, FragmentAdmin.class));
                 }
             });
             edit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(UserDetailActivity.this, com.example.projecthk1_2023_2024.Admin.activityuser.EditUserActivity.class);
+                    Intent i = new Intent(UserDetailActivity.this, EditUserActivity.class);
                     i.putExtra("IdUser",idUser);
                     startActivity(i);
                 }
