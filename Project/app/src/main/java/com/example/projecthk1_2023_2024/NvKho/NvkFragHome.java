@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NvkFragHome extends Fragment {
-
+    static boolean isImgBack = false;
     TextView nameAccount;
     ImageView avtAcount;
     FrameLayout vtri, qlXuat, qlNhap, qlSP;
