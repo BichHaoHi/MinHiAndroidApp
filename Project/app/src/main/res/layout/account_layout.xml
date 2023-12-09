@@ -118,7 +118,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/name"
+                    android:id="@+id/namea"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="4dp"
@@ -148,7 +148,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/bir"
+                    android:id="@+id/bira"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:background="@drawable/round4corner_border"
@@ -177,7 +177,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/sex"
+                    android:id="@+id/sexa"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:background="@drawable/round4corner_border"
@@ -206,7 +206,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/postcode"
+                    android:id="@+id/postcodea"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="4dp"
@@ -236,7 +236,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/phone"
+                    android:id="@+id/phonea"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="4dp"
@@ -266,7 +266,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/address"
+                    android:id="@+id/addressa"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:background="@drawable/round4corner_border"

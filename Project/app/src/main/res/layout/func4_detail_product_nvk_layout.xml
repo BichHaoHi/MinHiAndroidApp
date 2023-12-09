@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f8f8fa">
+    android:background="#f8f8fa"
+    >
 
     <LinearLayout
         android:id="@+id/consText"
@@ -24,13 +25,14 @@
                 android:id="@+id/detail_sp"
                 android:layout_width="317dp"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
+                android:layout_marginStart="11dp"
+                android:gravity="center_vertical"
                 android:text="Kem chống nắng"
                 android:textColor="#ffffff"
                 android:textSize="30dp"
+
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back_detailsp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.538" />
 

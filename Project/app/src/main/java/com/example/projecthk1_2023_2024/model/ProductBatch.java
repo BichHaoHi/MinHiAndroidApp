@@ -1,9 +1,18 @@
 package com.example.projecthk1_2023_2024.model;
 
+import android.util.Pair;
+
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class ProductBatch {
     private int Quantity;
@@ -91,5 +100,25 @@ public class ProductBatch {
 
     public void setQuantity_Valid(int quantity_Valid) {
         Quantity_Valid = quantity_Valid;
+    }
+    public String getIdDocument(String id){
+        final String[] result = {""};
+        FirebaseFirestore.getInstance().collection("ProductBatch").document(id)
+                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (documentSnapshot.exists()) {
+                            DocumentReference idBatch = documentSnapshot.getDocumentReference("IDBatch");
+                            idBatch.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                @Override
+                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                    result[0] = documentSnapshot.getId();
+                                }
+                            });
+                        } else {
+                        }
+                    }
+                });
+        return result[0];
     }
 }

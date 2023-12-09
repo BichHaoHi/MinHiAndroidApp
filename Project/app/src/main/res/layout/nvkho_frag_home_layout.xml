@@ -6,13 +6,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cons_frag_child"
-            android:layout_width="406dp"
-            android:layout_height="705dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#F2F1F6"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +24,7 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#719AE4"
+                android:background="@color/background"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +46,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.357"
-                        app:srcCompat="@drawable/vit" />
+                        app:srcCompat="@drawable/user_1" />
 
                     <TextView
                         android:id="@+id/nameAccountNV"
@@ -53,11 +55,12 @@
                         android:layout_marginStart="20dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:textSize="25dp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@+id/imgAvt"
                         app:layout_constraintStart_toEndOf="@+id/imgAvt"
                         app:layout_constraintTop_toTopOf="@+id/imgAvt" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -221,9 +224,9 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="398dp"
-                android:layout_height="320dp"
-                android:layout_marginTop="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/cons_frag_child"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -232,14 +235,17 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/newNote"
-                    android:layout_width="392dp"
-                    android:layout_height="320dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0" />
+                    app:layout_constraintVertical_bias="0.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

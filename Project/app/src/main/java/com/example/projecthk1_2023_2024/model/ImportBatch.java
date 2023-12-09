@@ -91,7 +91,7 @@ public class ImportBatch {
     }
     public List<Pair<String, ProductBatch>> getDetailImport(String id){
         List<Pair<String, ProductBatch>> results = new ArrayList<>();
-        DocumentReference documentReference =  FirebaseFirestore.getInstance().collection("ImportBatch").document("id");
+        DocumentReference documentReference =  FirebaseFirestore.getInstance().collection("ImportBatch").document(id);
         FirebaseFirestore.getInstance().collection("ProductBatch").whereEqualTo("IDBatch",documentReference)
                 .get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
