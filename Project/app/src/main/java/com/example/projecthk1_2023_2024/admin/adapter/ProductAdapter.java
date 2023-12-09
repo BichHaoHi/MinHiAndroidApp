@@ -36,7 +36,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.item_view_sanpham,parent,false);
+                .inflate(R.layout.nvkho_func4_qlsp_item,parent,false);
         return new MyViewHolder(view, context);
     }
 

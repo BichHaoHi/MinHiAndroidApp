@@ -38,7 +38,7 @@ public class DetailProductActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.detail_sp);
+        setContentView(R.layout.func4_detail_product_nvk_layout);
         String IdProduct = getIntent().getStringExtra("IdProduct");
         String nameProduct = getIntent().getStringExtra("nameProduct");
         recyclerView = findViewById(R.id.recyclerViewDTSP);
