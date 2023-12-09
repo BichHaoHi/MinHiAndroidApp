@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_layout);
-//        firebaseAuth.signOut();
+        setContentView(R.layout.add_import);
+        firebaseAuth.signOut();
         emailEDT = findViewById(R.id.edtEmail);
         passEDT = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_import"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/back_icon"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phiếu Nhập Mới"
+        android:textColor="#578AE6"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_4"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/add_import"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/box_import"
+                android:layout_width="111dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/box_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tex_maphieunhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="PN0001"
+                android:textColor="#578AE6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/box_import" />
+
+            <TextView
+                android:id="@+id/text_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Mã nhân viên: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tex_maphieunhap" />
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="NV0001 "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/text_userid"
+                app:layout_constraintTop_toBottomOf="@+id/tex_maphieunhap" />
+
+            <TextView
+                android:id="@+id/text_date_import"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Ngày tạo: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_userid" />
+
+            <TextView
+                android:id="@+id/date_import"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:text="09/12/2023"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/text_date_import"
+                app:layout_constraintTop_toBottomOf="@+id/userid" />
+
+            <TextView
+                android:id="@+id/text_datesuccess_import"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Ngày giao: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_date_import" />
+
+            <EditText
+                android:id="@+id/editText_datesuccess"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="time"
+                android:text="dd/mm/yy"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@+id/text_datesuccess_import"
+                app:layout_constraintTop_toBottomOf="@+id/date_import" />
+
+            <TextView
+                android:id="@+id/text_supplier_import"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Nhà cung cấp: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_datesuccess_import" />
+
+            <EditText
+                android:id="@+id/editText_supplier"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="36dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="VD: Hasaki"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/text_supplier_import"
+                app:layout_constraintTop_toBottomOf="@+id/editText_datesuccess" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_sanpham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:text="Sản phẩm 1"
+                android:textColor="#578AE6"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText_masanpham"
+                android:layout_width="150dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custome_edittext"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:hint="Mã sản phẩm"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/black"
+                android:textColorHint="#9F9E9E"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_sanpham" />
+
+            <EditText
+                android:id="@+id/editText_tensanpham"
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custome_edittext"
+                android:ems="10"
+                android:hint="Tên sản phẩm"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9F9E9E"
+                android:textStyle="italic"
+                android:maxLines="1"
+                android:scrollbars="horizontal"
+                android:fadeScrollbars="true"
+                app:layout_constraintStart_toEndOf="@+id/editText_masanpham"
+                app:layout_constraintTop_toBottomOf="@+id/text_sanpham" />
+
+            <EditText
+                android:id="@+id/editText_giasanpham"
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:hint="Giá"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/black"
+                android:textColorHint="#9F9E9E"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_masanpham" />
+
+            <EditText
+                android:id="@+id/editText_soluongsanpham"
+                android:layout_width="150dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:ems="10"
+                android:hint="Số lượng"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#9F9E9E"
+                android:textStyle="italic"
+                android:maxLines="1"
+                android:scrollbars="horizontal"
+                android:fadeScrollbars="true"
+                app:layout_constraintStart_toEndOf="@+id/editText_giasanpham"
+                app:layout_constraintTop_toBottomOf="@+id/editText_masanpham" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#DAD8D8"
+                app:layout_constraintTop_toBottomOf="@+id/editText_giasanpham"
+                tools:layout_editor_absoluteX="-16dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_addin4"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_add_imagebutton"
+                android:src="@drawable/plus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:text="Tạo"
+                android:textColor="@color/white"
+                app:backgroundTint="@drawable/custom_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton_addin4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

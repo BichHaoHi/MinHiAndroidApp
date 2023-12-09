@@ -61,6 +61,9 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
             android:layout_below="@id/imgStore"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:fadeScrollbars="true"
             />
 
         <!-- EditText cho mật khẩu -->
@@ -74,6 +77,9 @@
             android:layout_marginRight="20dp"
             android:layout_below="@id/edtEmail"
             android:inputType="textPassword"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:fadeScrollbars="true"
 
 
 

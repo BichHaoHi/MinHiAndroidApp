@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Heading_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phiếu Xuất Kho"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_phieuchuahoanthanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Chưa hoàn thành: "
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#B1B1B1"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_export" />
+
+    <TextView
+        android:id="@+id/soluong_phieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="30"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_phieuchuahoanthanh" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_export2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_export"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_export"></LinearLayout>
+
+    <TextView
+        android:id="@+id/text_sophieuhoanthanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hoàn thành: "
+        android:textColor="#B1B1B1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_export" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="20"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sophieuhoanthanh" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_export"
+        android:layout_width="350dp"
+        android:layout_height="511dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageButton
+        android:id="@+id/btnAdd_export"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bottom"
+        android:contentDescription="add_export"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_export"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/text_phieuchuahoanthanh"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_export" />
+
+    <CheckBox
+        android:id="@+id/checkBox_export2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_sophieuhoanthanh"
+        app:layout_constraintTop_toBottomOf="@+id/Heading_export" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
