@@ -5,28 +5,27 @@ import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ViewModel.VMQlsp;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.Product;
-import com.google.firebase.Timestamp;
 
-import java.util.Date;
 import java.util.List;
 
-public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> {
+public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder>  {
     Context context;
     ItemClick itemClick;
-    private List<Pair<String, Product>> listSP;
+    private List<Pair<String, Product>> listProduct;
 
-    public QLSPAdapter(Context context, List<Pair<String, Product>> listSP) {
+    public QLSPAdapter(Context context, List<Pair<String, Product>> listProduct) {
         this.context = context;
-        this.listSP = listSP;
+        this.listProduct = listProduct;
     }
 
     public void setClickListener(ItemClick itemClick){
@@ -35,44 +34,46 @@ public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> 
 
     @NonNull
     @Override
-    public QLSPAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.nvkho_func4_qlsp_item,parent,false);
-        return new QLSPAdapter.MyViewHolder(view, context);
+        return new MyViewHolder(view, context);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QLSPAdapter.MyViewHolder holder, int position) {
-        Pair<String, Product> SPPair = listSP.get(position);
-        holder.txtTensp.setText(SPPair.second.getName());
-        holder.txtSlt.setText(SPPair.second.getQuantity());
-//        holder.txtMaLo.setText(SPPair.first);
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Pair<String, Product> productPair = listProduct.get(position);
+        holder.nameView.setText(productPair.second.getName());
+        holder.totalView.setText(String.valueOf(productPair.second.getQuantity()));
+        holder.stockView.setText(String.valueOf(productPair.second.getQuantity_Stock()));
+        /**
+         *  Using Glide Library to Display the images
+         * */
 
-//        Timestamp exprided = SPPair.getBatchPair4().second.getExpiryDate();
-        //Định dạng ngày thành kiểu String
-//        String exDate = String.valueOf(exprided);
-        //Đặt giá trị cho TextView
-//        holder.txtHsd.setText(exDate);
+        Glide.with(context)
+                .load(productPair.second.getLink_Photo())
+                //.placeholder()
+                .fitCenter()
+                .into(holder.img);
     }
 
     @Override
     public int getItemCount() {
-        return listSP.size();
+        return listProduct.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView txtTensp;
-        TextView txtSlt;
-        TextView txtMaLo;
-        TextView txtHsd;
+        TextView nameView, totalView, stockView;
+        ImageView img;
 
         public MyViewHolder(@NonNull View itemView, Context ctx) {
             super(itemView);
             context = ctx;
-            txtTensp = itemView.findViewById(R.id.slht4);
-            txtSlt = itemView.findViewById(R.id.sltt4);
-            txtMaLo = itemView.findViewById(R.id.maLo4);
-            txtHsd = itemView.findViewById(R.id.hsd4);
+            nameView = itemView.findViewById(R.id.nameView);
+            totalView = itemView.findViewById(R.id.totalView);
+            stockView = itemView.findViewById(R.id.stockView);
+            img = itemView.findViewById(R.id.imgSP);
+            itemView.setOnClickListener(this);
         }
 
         @Override

@@ -7,5 +7,5 @@
 
     <!-- Các thuộc tính sau đây định dạng hình dạng (hình tròn trong trường hợp này) -->
     <corners android:radius="5dp" />
-    <solid android:color="#e6e6e6" />  <!-- Màu nền trong suốt (#00000000) -->
+    <solid android:color="@color/color_notice" />  <!-- Màu nền trong suốt (#00000000) -->
 </shape>
