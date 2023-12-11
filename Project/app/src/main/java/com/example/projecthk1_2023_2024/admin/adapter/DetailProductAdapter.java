@@ -37,7 +37,13 @@ public class DetailProductAdapter extends RecyclerView.Adapter<DetailProductAdap
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Pair<String, ProductBatch> productBatchPair = listProductBatch.get(position);
-        holder.maLo.setText(productBatchPair.second.getIdDocument(productBatchPair.first));
+//        holder.maLo.setText("");
+        productBatchPair.second.getIdDocument(productBatchPair.first, new ProductBatch.MyCallback() {
+            @Override
+            public void onCallback(String result) {
+                holder.maLo.setText(result);
+            }
+        });
         holder.sl.setText(String.valueOf(productBatchPair.second.getQuantity()));
         holder.slValid.setText(String.valueOf(productBatchPair.second.getQuantity_Valid()));
     }
