@@ -62,7 +62,7 @@ public class ImportAdapter extends RecyclerView.Adapter<ImportAdapter.MyViewHold
             idImport = itemView.findViewById(R.id.mapn3);
             sup = itemView.findViewById(R.id.ncc3);
             quantity = itemView.findViewById(R.id.slnhap3);
-            status = itemView.findViewById(R.id.ttnhap3);
+            status = itemView.findViewById(R.id.statusDon3);
             itemView.setOnClickListener(this);
         }
 

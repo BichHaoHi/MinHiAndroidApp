@@ -1,6 +1,7 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncNhapHang;
 
 import android.content.Context;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ViewModel.VMNewExport;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.model.ImportBatch;
+import com.example.projecthk1_2023_2024.model.Product;
+
 import java.util.List;
 
 public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyViewHolder>  {
     Context context;
     ItemClick itemClick;
-    private List<VMNewExport> listNewExp;
+    private List<Pair<String, ImportBatch>> listNewExp;
 
-    public NewImportAdapter(Context context, List<VMNewExport> listNewExp) {
+    public NewImportAdapter(Context context, List<Pair<String, ImportBatch>> listNewExp) {
         this.context = context;
         this.listNewExp = listNewExp;
     }
@@ -37,17 +41,19 @@ public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull NewImportAdapter.MyViewHolder holder, int position) {
-        VMNewExport NewImpPair = listNewExp.get(position);
-        holder.txtMapn.setText(NewImpPair.getExpPair().first);//Tong -> Exp --> idExp
-        holder.txtTensp.setText(NewImpPair.getExp_batchPair().second
-                .getProduct(NewImpPair.getExp_batchPair().second.getIdProductBatch()).getName()); //Tong -> exp -> getIdPr -> getNamePr
-        holder.txtTTNhap.setText(NewImpPair.getExp_batchPair().second.getQuantity());
+        Pair<String, ImportBatch> NewImpPair = listNewExp.get(position);
+        holder.txtMapn.setText(NewImpPair.first);
+        holder.txtNCC.setText(NewImpPair.second.getSupplier());
 
-//        Glide.with(context)
-//                .load(productPair.second.getLink_Photo())
-//                //.placeholder()
-//                .fitCenter()
-//                .into(holder.img);
+        Boolean statusDeli = NewImpPair.second.getStausDeli();
+        if(statusDeli == true){// true la 1
+            holder.txtTTdon.setText("Đã đến kho");
+        }
+        else{
+            holder.txtTTdon.setText("Đang vận chuyển");
+        }
+        holder.txtSlNhap.setText(String.valueOf(NewImpPair.second.getQuantity_import()));
+
     }
 
     @Override
@@ -56,14 +62,15 @@ public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyVi
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView txtMapn, txtTensp, txtTTNhap;
+        TextView txtMapn, txtNCC, txtTTdon, txtSlNhap;
 
         public MyViewHolder(@NonNull View itemView, Context ctx) {
             super(itemView);
             context = ctx;
             txtMapn = itemView.findViewById(R.id.mapn3);
-//            txtTensp = itemView.findViewById(R.id.tensp3);
-            txtTTNhap = itemView.findViewById(R.id.ttnhap3);
+            txtNCC = itemView.findViewById(R.id.ncc3);
+            txtTTdon = itemView.findViewById(R.id.statusDon3);
+            txtSlNhap = itemView.findViewById(R.id.slnhap3);
         }
 
         @Override

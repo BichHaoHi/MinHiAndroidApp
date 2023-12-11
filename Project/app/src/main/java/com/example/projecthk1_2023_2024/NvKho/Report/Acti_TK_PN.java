@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projecthk1_2023_2024.NvKho.NvkFragReport;
 import com.example.projecthk1_2023_2024.R;
 
 public class Acti_TK_PN extends AppCompatActivity {

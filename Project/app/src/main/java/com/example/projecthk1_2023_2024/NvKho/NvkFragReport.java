@@ -1,4 +1,4 @@
-package com.example.projecthk1_2023_2024.NvKho.Report;
+package com.example.projecthk1_2023_2024.NvKho;
 import static com.google.firebase.firestore.FirebaseFirestore.*;
 
 import android.annotation.SuppressLint;

@@ -114,7 +114,6 @@ public class NvkFragHome extends Fragment {
                 });
 
 // 2. xử lý xem và sửa thông tin tài khoản cá nhân
-//        nameAccount = view.findViewById(R.id.nameAccount);
         avtAcount = view.findViewById(R.id.imgAvt);
         avtAcount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,6 +131,8 @@ public class NvkFragHome extends Fragment {
                 startActivity(i);
             }
         });
+
+
         //4. Xu ly xuat kho
         qlXuat = view.findViewById(R.id.func_qlXuat);
         qlXuat.setOnClickListener(new View.OnClickListener() {
@@ -142,6 +143,8 @@ public class NvkFragHome extends Fragment {
                 // bắt các sự kiện để xem tt detail
             }
         });
+
+
         // 5.xu ly nhap
         qlNhap = view.findViewById(R.id.func_qlNhap);
         qlNhap.setOnClickListener(new View.OnClickListener() {
@@ -152,6 +155,8 @@ public class NvkFragHome extends Fragment {
                 // bắt các sự kiện để xem tt detail
             }
         });
+
+
         // 6. Quan ly san phaam
         qlSP = view.findViewById(R.id.func_qlsp);
         qlSP.setOnClickListener(new View.OnClickListener() {

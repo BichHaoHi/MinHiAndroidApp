@@ -82,6 +82,12 @@
             android:name=".NvKho.FuncQLSP.DetailProductNVKActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="false" />
+        <activity
+            android:name=".NvKho.FuncNhapHang.Func_qlNhapHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NvKho.FuncNhapHang.NewImportAdapter"
+            android:exported="false" />
     </application>
 
 </manifest>

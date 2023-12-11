@@ -55,7 +55,7 @@ public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Func_QLSPActivity.this, NvkFragHome.class));
+                onBackPressed();
             }
         });
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

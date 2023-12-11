@@ -21,28 +21,28 @@ public class ImportBatch {
     private int Quantity_import;
     private String Supplier;
     private DocumentReference IDUser;
-    private String NameBatch;
+    private boolean Status_delivery;
 
     public ImportBatch() {
     }
 
-    public ImportBatch(Timestamp date, boolean enable, Timestamp date_success, String status, int quantity_import, String supplier, DocumentReference IDUser, String nameBatch) {
-        Date = date;
-        Enable = enable;
-        Date_success = date_success;
-        Status = status;
-        Quantity_import = quantity_import;
-        Supplier = supplier;
+    public ImportBatch(Timestamp date, boolean enable, Timestamp date_success, String status, int quantity_import, String supplier, DocumentReference IDUser, boolean status_delivery) {
+        this.Date = date;
+        this.Enable = enable;
+        this.Date_success = date_success;
+        this.Status = status;
+        this.Quantity_import = quantity_import;
+        this.Supplier = supplier;
         this.IDUser = IDUser;
-        NameBatch = nameBatch;
+        this.Status_delivery = status_delivery;
     }
 
-    public String getNameBatch() {
-        return NameBatch;
+    public Boolean getStausDeli() {
+        return Status_delivery;
     }
 
-    public void setNameBatch(String nameBatch) {
-        NameBatch = nameBatch;
+    public void setStatusDeli(Boolean st_delivery) {
+        Status_delivery = st_delivery;
     }
 
     public void setDate(Timestamp date) {
