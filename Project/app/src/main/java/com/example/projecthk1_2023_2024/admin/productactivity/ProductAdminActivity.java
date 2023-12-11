@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projecthk1_2023_2024.Admin.FragmentAdmin;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ProductListAdd;
 import com.example.projecthk1_2023_2024.Admin.AdminHomeActivity;
@@ -48,7 +49,7 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProductAdminActivity.this, AdminHomeActivity.class));
+                startActivity(new Intent(ProductAdminActivity.this, FragmentAdmin.class));
             }
         });
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -77,7 +78,7 @@ public class ProductAdminActivity extends AppCompatActivity implements ItemClick
 
     @Override
     public void onClick(View v, int pos) {
-        Intent i = new Intent(ProductAdminActivity.this, com.example.projecthk1_2023_2024.Admin.productactivity.DetailProductActivity.class);
+        Intent i = new Intent(ProductAdminActivity.this,DetailProductActivity.class);
         i.putExtra("IdProduct",listProduct.get(pos).first);
         i.putExtra("nameProduct",listProduct.get(pos).second.getName());
         startActivity(i);

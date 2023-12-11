@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,29 +14,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectHK1_20232024"
         tools:targetApi="31">
-        <activity android:name=".ForgetPassActivity"
-            android:exported="false"/>
-
-        <activity android:name=".Admin.activityuser.UserAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.AdminHomeActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.NotificationAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.SettingAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.activityuser.UserDetailActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.productactivity.ProductAdminActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.activityuser.AddUserActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.productactivity.DetailProductActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.activityuser.EditUserActivity"
-            android:exported="false"/>
-        <activity android:name=".Admin.FragmentAdmin"
-            android:exported="false"/>
+        <activity
+            android:name=".NvKho.FuncQLSP.DetailProductNVKAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".NvKho.FuncQLSP.DetailProductNVKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.UserAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.NotificationAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.SettingAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.productactivity.ProductAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.productactivity.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.activityuser.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.FragmentAdmin"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -44,15 +62,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NvKho.NvkActivity"
-            android:exported="false"/>
-        <activity android:name=".NvKho.AccountActivity"
-            android:exported="false"/>
-        <activity android:name=".NvKho.FuncQLSP.Func_QLSPActivity"
-            android:exported="false"/>
-
-
-
+        <activity
+            android:name=".NvKho.NvkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NvKho.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NvKho.FuncQLSP.Func_QLSPActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

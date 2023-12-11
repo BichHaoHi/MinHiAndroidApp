@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.projecthk1_2023_2024.Admin.FragmentAdmin;
 import com.example.projecthk1_2023_2024.Admin.adapter.UserAdapter;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
@@ -49,7 +51,7 @@ public class UserAdminActivity extends AppCompatActivity implements ItemClick {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UserAdminActivity.this, AdminHomeActivity.class));
+                startActivity(new Intent(UserAdminActivity.this, FragmentAdmin.class));
             }
         });
         collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

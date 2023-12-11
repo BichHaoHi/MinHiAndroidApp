@@ -49,9 +49,9 @@ public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sanpham);
-        recyclerView = findViewById(R.id.recyclerViewSP);
-        back = findViewById(R.id.back);
+        setContentView(R.layout.nvkho_func4_qlsp_layout);
+        recyclerView = findViewById(R.id.recy_phieuSP_f4);
+        back = findViewById(R.id.back_home4);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

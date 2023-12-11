@@ -2,12 +2,17 @@ package com.example.projecthk1_2023_2024.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.example.projecthk1_2023_2024.MainActivity;
@@ -20,28 +25,29 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class SettingAdminActivity extends AppCompatActivity  {// extends Fragment mới dùng được Fragmnet
+public class SettingAdminActivity extends Fragment {// extends Fragment mới dùng được Fragmnet
     ImageView img, back;
     TextView nameView, phoneView, sexView, startView, roleView;
     Button btnLogOut;
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.detail_nv);
-        img = findViewById(R.id.avt_nv);
-        phoneView = findViewById(R.id.Text_phone);
-        nameView = findViewById(R.id.Name);
-        sexView = findViewById(R.id.Text_sex);
-        startView = findViewById(R.id.Text_start_date);
-        roleView = findViewById(R.id.Text_role);
-        back = findViewById(R.id.back);
-        btnLogOut = findViewById(R.id.btnLogout);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.detail_nv,container,false);
+        img = view.findViewById(R.id.avt_nv);
+        phoneView = view.findViewById(R.id.Text_phone);
+        nameView = view.findViewById(R.id.Name);
+        sexView = view.findViewById(R.id.Text_sex);
+        startView = view.findViewById(R.id.Text_start_date);
+        roleView = view.findViewById(R.id.Text_role);
+        back = view.findViewById(R.id.back);
+        btnLogOut = view.findViewById(R.id.btnLogout);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                getActivity().onBackPressed();
             }
         });
         AuUser auUser = AuUser.getInstance();
@@ -51,7 +57,7 @@ public class SettingAdminActivity extends AppCompatActivity  {// extends Fragmen
          *  Using Glide Library to Display the images
          * */
 
-        Glide.with(getApplicationContext())
+        Glide.with(this)
                 .load(user.getImage())
                 //.placeholder()
                 .fitCenter()
@@ -66,7 +72,7 @@ public class SettingAdminActivity extends AppCompatActivity  {// extends Fragmen
             @Override
             public void onClick(View v) {
                 firebaseAuth.signOut();
-                Intent intent = new Intent(SettingAdminActivity.this, MainActivity.class);
+                Intent intent = new Intent(getActivity(), MainActivity.class);
 
                 // Đặt cờ để xóa hết Activity khác và tạo ngăn xếp mới
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -75,9 +81,7 @@ public class SettingAdminActivity extends AppCompatActivity  {// extends Fragmen
 
             }
         });
-
-
-
+        return view;
     }
 
     private String ChangeDaytoString(Timestamp startDate) {

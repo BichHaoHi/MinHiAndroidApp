@@ -1,7 +1,16 @@
 package com.example.projecthk1_2023_2024.model;
 
+import android.util.Pair;
+
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ImportBatch {
     private Timestamp Date;
@@ -79,5 +88,22 @@ public class ImportBatch {
 
     public DocumentReference getIDUser() {
         return IDUser;
+    }
+    public List<Pair<String, ProductBatch>> getDetailImport(String id){
+        List<Pair<String, ProductBatch>> results = new ArrayList<>();
+        DocumentReference documentReference =  FirebaseFirestore.getInstance().collection("ImportBatch").document(id);
+        FirebaseFirestore.getInstance().collection("ProductBatch").whereEqualTo("IDBatch",documentReference)
+                .get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    @Override
+                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                        for (QueryDocumentSnapshot snapshot : queryDocumentSnapshots){
+                            String idDocument = snapshot.getId();
+                            ProductBatch productBatch = snapshot.toObject(ProductBatch.class);
+                            Pair<String, ProductBatch> productBatchPair = new Pair<>(idDocument,productBatch);
+                            results.add(productBatchPair);
+                        }
+                    }
+                });
+        return results;
     }
 }

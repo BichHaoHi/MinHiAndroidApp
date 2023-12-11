@@ -2,6 +2,7 @@ package com.example.projecthk1_2023_2024.Admin;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
@@ -20,8 +21,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projecthk1_2023_2024.Admin.activityuser.UserAdminActivity;
 import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
+import com.example.projecthk1_2023_2024.Admin.productactivity.ProductAdminActivity;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListUser;
 import com.example.projecthk1_2023_2024.model.Notification;
@@ -43,7 +46,7 @@ import java.util.List;
 public class AdminHomeActivity extends Fragment implements ItemClick {
     ImageView imgUser;
     TextView textView;
-    FrameLayout nhanVien, nhapHang, xuatHang, product;
+    ViewGroup nhanVien, nhapHang, xuatHang, product;
     RecyclerView recyclerView;
     private User user;
     private List<Pair<String, Notification>> notificationList = new ArrayList<>();
@@ -65,6 +68,7 @@ public class AdminHomeActivity extends Fragment implements ItemClick {
         firebaseAuth = FirebaseAuth.getInstance();
         currentUser = firebaseAuth.getCurrentUser();
         textView = view.findViewById(R.id.nameAccount);
+        imgUser = view.findViewById(R.id.imageView2);
         String loginId = currentUser.getUid();
         collectionReferenceNotification.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
@@ -121,6 +125,32 @@ public class AdminHomeActivity extends Fragment implements ItemClick {
                 } else {
                     Log.d(TAG, "Error getting documents: ", task.getException());
                 }
+            }
+        });
+        nhanVien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), UserAdminActivity.class));
+            }
+        });
+        nhapHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                startActivity();
+
+            }
+        });
+        xuatHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                startActivity();
+
+            }
+        });
+        product.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), ProductAdminActivity.class));
             }
         });
         return view;
