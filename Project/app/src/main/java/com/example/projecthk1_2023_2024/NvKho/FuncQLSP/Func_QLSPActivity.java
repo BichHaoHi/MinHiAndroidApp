@@ -84,7 +84,7 @@ public class Func_QLSPActivity extends AppCompatActivity implements ItemClick {
 
     @Override
     public void onClick(View v, int pos) {
-        Intent i = new Intent(Func_QLSPActivity.this, com.example.projecthk1_2023_2024.Admin.productactivity.DetailProductActivity.class);
+        Intent i = new Intent(Func_QLSPActivity.this, DetailProductNVKActivity.class);
         i.putExtra("IdProduct",listProduct.get(pos).first);
         i.putExtra("nameProduct",listProduct.get(pos).second.getName());
         startActivity(i);

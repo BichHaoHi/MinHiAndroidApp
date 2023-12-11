@@ -15,6 +15,8 @@ import com.example.projecthk1_2023_2024.model.ProductBatch;
 
 import java.util.List;
 
+
+
 public class DetailProductAdapter extends RecyclerView.Adapter<DetailProductAdapter.MyViewHolder> {
     Context context;
     private List<Pair<String, ProductBatch>> listProductBatch;

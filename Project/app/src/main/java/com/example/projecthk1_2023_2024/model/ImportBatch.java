@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImportBatch {
+    // thêm NameBatch để lấy mã lô và hiển thị ra giao diện với định dạng LX12345
     private Timestamp Date;
     private boolean Enable;
     private Timestamp Date_success;
@@ -20,18 +21,28 @@ public class ImportBatch {
     private int Quantity_import;
     private String Supplier;
     private DocumentReference IDUser;
+    private String NameBatch;
 
     public ImportBatch() {
     }
 
-    public ImportBatch(Timestamp Date, boolean Enable, Timestamp Date_success, String Status, int Quantity_import, String Supplier, DocumentReference IDUser) {
-        this.Date = Date;
-        this.Enable = Enable;
-        this.Date_success = Date_success;
-        this.Status = Status;
-        this.Quantity_import = Quantity_import;
-        this.Supplier = Supplier;
+    public ImportBatch(Timestamp date, boolean enable, Timestamp date_success, String status, int quantity_import, String supplier, DocumentReference IDUser, String nameBatch) {
+        Date = date;
+        Enable = enable;
+        Date_success = date_success;
+        Status = status;
+        Quantity_import = quantity_import;
+        Supplier = supplier;
         this.IDUser = IDUser;
+        NameBatch = nameBatch;
+    }
+
+    public String getNameBatch() {
+        return NameBatch;
+    }
+
+    public void setNameBatch(String nameBatch) {
+        NameBatch = nameBatch;
     }
 
     public void setDate(Timestamp date) {

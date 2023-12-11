@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
-            android:text="22/11/2025"
+            android:text="22/11/2000"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/maLo4"
@@ -74,6 +74,8 @@
             android:layout_marginBottom="5dp"
             android:text="100"
             android:textSize="27dp"
+            android:textColor="#982121"
+            android:imeOptions="flagNoExtractUi"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
             tools:ignore="MissingConstraints" />

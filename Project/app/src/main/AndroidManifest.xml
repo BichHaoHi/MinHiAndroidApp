@@ -19,6 +19,7 @@
             android:exported="false" />
         <activity
             android:name=".NvKho.FuncQLSP.DetailProductNVKActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".ForgetPassActivity"
