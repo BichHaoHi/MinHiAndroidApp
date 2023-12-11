@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,15 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="230dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="15dp"
         android:background="@drawable/border_phieu"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
@@ -27,9 +26,9 @@
             android:layout_width="153dp"
             android:layout_height="match_parent"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="17dp"
             android:text="Mã lô:\n \nHSD:\n \nSL hệ thống:\n \n \nSL thực tế:\n"
             android:textSize="20dp"
-            android:layout_marginTop="17dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +39,6 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
-            android:text="LX2345"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent"
@@ -72,10 +70,10 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginBottom="5dp"
-            android:text="100"
-            android:textSize="27dp"
-            android:textColor="#982121"
             android:imeOptions="flagNoExtractUi"
+            android:text="100"
+            android:textColor="#982121"
+            android:textSize="27dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
             tools:ignore="MissingConstraints" />
@@ -83,17 +81,20 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="-28dp" />
+    <Button
+        android:id="@+id/btn_updateQLSP"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Xác nhận"
+        app:backgroundTint="#254c7b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_phieu"
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="MissingConstraints" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-1dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

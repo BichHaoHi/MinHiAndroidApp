@@ -52,42 +52,26 @@
     </LinearLayout>
 
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/consText">
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/nestedScrollView3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/consText">-->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewDTSP"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-
-
-            app:layout_constraintTop_toBottomOf="@+id/consText" />
-
-    </androidx.core.widget.NestedScrollView>
-
-    <Button
-        android:id="@+id/btn_update"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:text="Xác nhận"
-        app:backgroundTint="#254c7b"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDTSP"
+        android:layout_width="397dp"
+        android:layout_height="513dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView3"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/consText"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

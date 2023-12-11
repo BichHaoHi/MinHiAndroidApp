@@ -23,9 +23,6 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
-// THuật toán cập nhật kiểm kho: tại ProductBatch lấy IDBatch, quantity( tổng số lượng ) cho 2 ô hiênr thị, HSD tại IDProduct xác định
-// Có IDBatch --> ImportBatch lấy NameBatch để hiển thị tại maLo
-// lấy được HSD kiêủ tampstime chuyển về định dạng kiểu String và cho hiển thị vào textView
 public class DetailProductNVKActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     TextView nameProductTV;
@@ -46,7 +43,7 @@ public class DetailProductNVKActivity extends AppCompatActivity {
         nameProductTV = findViewById(R.id.detail_sp);
         back = findViewById(R.id.back_detailsp);
 
-        DocumentReference documentReferencePr = db.collection("Product").document(IdProduct);
+        DocumentReference documentReference = db.collection("Product").document(IdProduct);
         nameProductTV.setText(nameProduct);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +51,7 @@ public class DetailProductNVKActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        collectionReferencePB.whereEqualTo("IDProduct",documentReferencePr)
+        collectionReferencePB.whereEqualTo("IDProduct",documentReference)
                 .get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
@@ -71,6 +68,7 @@ public class DetailProductNVKActivity extends AppCompatActivity {
 
                     }
                 });
+
 
     }
 }

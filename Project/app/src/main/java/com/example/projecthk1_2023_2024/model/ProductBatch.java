@@ -101,8 +101,7 @@ public class ProductBatch {
     public void setQuantity_Valid(int quantity_Valid) {
         Quantity_Valid = quantity_Valid;
     }
-    public String getIdDocument(String id){
-        final String[] result = {""};
+    public void getIdDocument(String id, final MyCallback myCallback) {
         FirebaseFirestore.getInstance().collection("ProductBatch").document(id)
                 .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -112,13 +111,20 @@ public class ProductBatch {
                             idBatch.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                    result[0] = documentSnapshot.getId();
+                                    String result = documentSnapshot.getId();
+                                    myCallback.onCallback(result);
                                 }
                             });
                         } else {
+                            // Handle the case where the document does not exist
                         }
                     }
                 });
-        return result[0];
     }
+
+    // Define a callback interface
+    public interface MyCallback {
+        void onCallback(String result);
+    }
+
 }
