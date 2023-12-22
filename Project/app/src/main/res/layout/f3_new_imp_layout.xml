@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NvKho.FuncNhapHang.NewImpActivity"
+    android:background="#76a5dd">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consText"
+            android:layout_width="414dp"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/back31"
+                android:layout_width="42dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textNhap"
+                app:layout_constraintHorizontal_bias="0.416"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.281" />
+
+            <TextView
+                android:id="@+id/textNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Phiếu nhập kho chưa xử lý"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.552"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.178" />
+
+            <ImageView
+                android:id="@+id/seach"
+                android:layout_width="299dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/seach"
+                android:paddingLeft="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNhap"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <ImageView
+                android:id="@+id/ic_search"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/seach"
+                app:layout_constraintEnd_toEndOf="@+id/seach"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="@+id/seach"
+                app:layout_constraintTop_toTopOf="@+id/seach"
+                app:layout_constraintVertical_bias="0.423"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/func_search"
+                android:layout_width="218dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Search"
+                app:layout_constraintBottom_toBottomOf="@+id/seach"
+                app:layout_constraintEnd_toEndOf="@+id/seach"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consInfPNhap"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round4corner_border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consText"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dspnMoi1"
+            android:layout_width="362dp"
+            android:layout_height="509dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

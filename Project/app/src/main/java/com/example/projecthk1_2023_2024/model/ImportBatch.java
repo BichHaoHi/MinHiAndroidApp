@@ -17,16 +17,16 @@ public class ImportBatch {
     private Timestamp Date;
     private boolean Enable;
     private Timestamp Date_success;
-    private String Status;
+    private String Status;// Waiting - Success - Cancelled
     private int Quantity_import;
     private String Supplier;
     private DocumentReference IDUser;
-    private boolean Status_delivery;
+
 
     public ImportBatch() {
     }
 
-    public ImportBatch(Timestamp date, boolean enable, Timestamp date_success, String status, int quantity_import, String supplier, DocumentReference IDUser, boolean status_delivery) {
+    public ImportBatch(Timestamp date, boolean enable, Timestamp date_success, String status, int quantity_import, String supplier, DocumentReference IDUser) {
         this.Date = date;
         this.Enable = enable;
         this.Date_success = date_success;
@@ -34,15 +34,7 @@ public class ImportBatch {
         this.Quantity_import = quantity_import;
         this.Supplier = supplier;
         this.IDUser = IDUser;
-        this.Status_delivery = status_delivery;
-    }
 
-    public Boolean getStausDeli() {
-        return Status_delivery;
-    }
-
-    public void setStatusDeli(Boolean st_delivery) {
-        Status_delivery = st_delivery;
     }
 
     public void setDate(Timestamp date) {
@@ -96,6 +88,7 @@ public class ImportBatch {
     public String getSupplier() {
         return Supplier;
     }
+
 
     public DocumentReference getIDUser() {
         return IDUser;

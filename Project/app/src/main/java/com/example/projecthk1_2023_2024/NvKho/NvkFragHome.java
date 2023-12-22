@@ -21,12 +21,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projecthk1_2023_2024.NvKho.FuncNhapHang.Func_qlNhapHangActivity;
+import com.example.projecthk1_2023_2024.NvKho.FuncNhapHang.Func_qlNhapHang1Activity;
 import com.example.projecthk1_2023_2024.NvKho.FuncPlace.Func_PlaceActivity;
 import com.example.projecthk1_2023_2024.NvKho.FuncQLSP.Func_QLSPActivity;
 import com.example.projecthk1_2023_2024.NvKho.FuncXuatHang.Func_qlXuatHangActivity;
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ListUser;
 import com.example.projecthk1_2023_2024.Admin.adapter.NotificationAdapter;
 import com.example.projecthk1_2023_2024.model.Notification;
 import com.example.projecthk1_2023_2024.model.User;
@@ -150,7 +149,7 @@ public class NvkFragHome extends Fragment {
         qlNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), Func_qlNhapHangActivity.class);
+                Intent i = new Intent(getContext(), Func_qlNhapHang1Activity.class);
                 startActivity(i);
                 // bắt các sự kiện để xem tt detail
             }

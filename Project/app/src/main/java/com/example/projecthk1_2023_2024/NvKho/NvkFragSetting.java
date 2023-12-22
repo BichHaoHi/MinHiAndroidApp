@@ -12,15 +12,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
-import com.example.projecthk1_2023_2024.Admin.SettingAdminActivity;
 import com.example.projecthk1_2023_2024.MainActivity;
-import com.example.projecthk1_2023_2024.NvKho.FuncNhapHang.Func_qlNhapHangActivity;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.AuUser;
 import com.example.projecthk1_2023_2024.model.User;

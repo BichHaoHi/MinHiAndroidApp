@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapte
     Context context;
     ItemClick itemClick;
     private List<VMDetailNewImp> listDetail;
+    Button btnHT, btnHuy;
 
     public DetailNewImpAdapter(Context context, List<VMDetailNewImp> listDetail) {
         this.context = context;
@@ -53,7 +55,7 @@ public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapte
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView txtTenSp, txtSlt, txtSln, txtMaLo;
+        TextView txtTenSp, txtMaLo, txtHsd, txtSlt, txtSln,txtGia;
 
         public MyViewHolder(@NonNull View itemView, Context ctx) {
             super(itemView);
@@ -62,13 +64,14 @@ public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapte
             txtSlt = itemView.findViewById(R.id.slTon31);
             txtSln = itemView.findViewById(R.id.slNhap31);
             txtMaLo= itemView.findViewById(R.id.maLo31);
+            txtHsd = itemView.findViewById(R.id.hsd31);
+            txtGia= itemView.findViewById(R.id.gia31);
         }
+
 
         @Override
         public void onClick(View v) {
-            if (itemClick!=null){
-                itemClick.onClick(v,getAdapterPosition());
-            }
+
         }
     }
 }

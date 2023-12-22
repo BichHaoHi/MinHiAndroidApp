@@ -10,21 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.R;
-import com.example.projecthk1_2023_2024.Util.ViewModel.VMNewExport;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.ImportBatch;
-import com.example.projecthk1_2023_2024.model.Product;
 
 import java.util.List;
 
-public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyViewHolder>  {
+public class ListImp1Adapter extends RecyclerView.Adapter<ListImp1Adapter.MyViewHolder>  {
     Context context;
     ItemClick itemClick;
-    private List<Pair<String, ImportBatch>> listNewExp;
+    private List<Pair<String, ImportBatch>> listImp;
 
-    public NewImportAdapter(Context context, List<Pair<String, ImportBatch>> listNewExp) {
+    public ListImp1Adapter(Context context, List<Pair<String, ImportBatch>> listNewExp) {
         this.context = context;
-        this.listNewExp = listNewExp;
+        this.listImp = listNewExp;
     }
 
     public void setClickListener(ItemClick itemClick){
@@ -33,32 +31,34 @@ public class NewImportAdapter extends RecyclerView.Adapter<NewImportAdapter.MyVi
 
     @NonNull
     @Override
-    public NewImportAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ListImp1Adapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.nvkho_func3_item,parent,false);
-        return new NewImportAdapter.MyViewHolder(view, context);
+        return new ListImp1Adapter.MyViewHolder(view, context);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewImportAdapter.MyViewHolder holder, int position) {
-        Pair<String, ImportBatch> NewImpPair = listNewExp.get(position);
+    public void onBindViewHolder(@NonNull ListImp1Adapter.MyViewHolder holder, int position) {
+        Pair<String, ImportBatch> NewImpPair = listImp.get(position);
         holder.txtMapn.setText(NewImpPair.first);
         holder.txtNCC.setText(NewImpPair.second.getSupplier());
-
-        Boolean statusDeli = NewImpPair.second.getStausDeli();
-        if(statusDeli == true){// true la 1
-            holder.txtTTdon.setText("Đã đến kho");
-        }
-        else{
-            holder.txtTTdon.setText("Đang vận chuyển");
-        }
+        holder.txtTTdon.setText(NewImpPair.second.getStatus().toString());
         holder.txtSlNhap.setText(String.valueOf(NewImpPair.second.getQuantity_import()));
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (itemClick != null) {
+                    itemClick.onClick(v, position);
+                }
+            }
+        });
 
     }
 
     @Override
     public int getItemCount() {
-        return listNewExp.size();
+        return listImp.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {

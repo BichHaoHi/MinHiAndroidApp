@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    tools:context=".NvKho.FuncNhapHang.NewImpActivity"
     android:background="#76a5dd">
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consText"
@@ -18,7 +17,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/back3"
+            android:id="@+id/back32"
             android:layout_width="42dp"
             android:layout_height="27dp"
             android:layout_marginEnd="20dp"
@@ -35,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Danh sách phiếu nhập kho"
+            android:text="Chi tiết phiếu nhập"
             android:textColor="#ffffff"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,35 +95,24 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/consText"
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/dspn"
-            android:layout_width="369dp"
-            android:layout_height="541dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.444"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/btnNewImp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/button_bottom"
-            android:contentDescription="add_user"
-            android:src="@drawable/ic_new"
+            android:id="@+id/ctpn"
+            android:layout_width="362dp"
+            android:layout_height="509dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

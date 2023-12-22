@@ -1,14 +1,12 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncNhapHang;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Pair;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -17,16 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projecthk1_2023_2024.Admin.adapter.ProductAdapter;
+import com.example.projecthk1_2023_2024.Admin.activityuser.AddUserActivity;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
-import com.example.projecthk1_2023_2024.MainActivity;
-import com.example.projecthk1_2023_2024.NvKho.FuncQLSP.Func_QLSPActivity;
-import com.example.projecthk1_2023_2024.NvKho.NvkFragHome;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Util.ListImportBatch;
-import com.example.projecthk1_2023_2024.Util.ProductListAdd;
 import com.example.projecthk1_2023_2024.model.ImportBatch;
-import com.example.projecthk1_2023_2024.model.Product;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,10 +31,11 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Func_qlNhapHangActivity extends AppCompatActivity implements ItemClick {
+public class Func_qlNhapHang1Activity extends AppCompatActivity implements ItemClick {
     Context context;
     RecyclerView recyclerView;
     ImageView back;
+    ImageButton btnNewImp;
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference collectionReferenceIB = db.collection("ImportBatch");
@@ -51,12 +45,19 @@ public class Func_qlNhapHangActivity extends AppCompatActivity implements ItemCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nvkho_func3_qlnhapkho_layout);
-        recyclerView = findViewById(R.id.dspxMoi);
+        recyclerView = findViewById(R.id.dspn);
         back = findViewById(R.id.back3);
+        btnNewImp = findViewById(R.id.btnNewImp);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+            }
+        });
+        btnNewImp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Func_qlNhapHang1Activity.this, NewImpActivity.class));
             }
         });
 
@@ -72,10 +73,10 @@ public class Func_qlNhapHangActivity extends AppCompatActivity implements ItemCl
                     }
                     ListImportBatch listImp = ListImportBatch.getInstance();
                     listImp.setListImportBatch(listImpBatch);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(Func_qlNhapHangActivity.this));
-                    NewImportAdapter adapter = new NewImportAdapter(Func_qlNhapHangActivity.this,listImpBatch);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(Func_qlNhapHang1Activity.this));
+                    ListImp1Adapter adapter = new ListImp1Adapter(Func_qlNhapHang1Activity.this,listImpBatch);
                     recyclerView.setAdapter(adapter);
-                    adapter.setClickListener(Func_qlNhapHangActivity.this);
+                    adapter.setClickListener(Func_qlNhapHang1Activity.this);
                     recyclerView.getAdapter().notifyDataSetChanged();
                 } else {
                     Toast.makeText(context, "No able get data", Toast.LENGTH_SHORT).show();
@@ -89,4 +90,5 @@ public class Func_qlNhapHangActivity extends AppCompatActivity implements ItemCl
     public void onClick(View v, int pos) {
 
     }
+
 }

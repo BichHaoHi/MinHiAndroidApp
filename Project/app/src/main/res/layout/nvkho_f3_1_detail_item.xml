@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_phieu"
         android:layout_width="386dp"
-        android:layout_height="222dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
@@ -18,15 +19,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imgSP"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/vit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.442"
+            tools:ignore="MissingConstraints" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="100dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="16dp"
-            android:text="Tên SP:\n \nMã lô:\n \nSL tồn:\n \nSL nhập:\n"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:text="Tên SP:\n \nMã lô:\n \nHSD:\n \nSL tồn:\n \nSL nhập:\n \nGiá nhập:"
             android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgSP"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
@@ -35,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="5dp"
             android:text="serum"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView"
@@ -55,7 +67,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/slTon31"
+            android:id="@+id/hsd31"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="0dp"
@@ -66,6 +78,16 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
+            android:id="@+id/slTon31"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:text="100"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/hsd31"
+            tools:ignore="MissingConstraints" />
+        <TextView
             android:id="@+id/slNhap31"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -75,21 +97,48 @@
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/slTon31"
             tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/gia31"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:text="100"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/slNhap31"
+            tools:ignore="MissingConstraints" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="-28dp" />
+    <Button
+        android:id="@+id/btn_ht31"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Hoàn thành"
+        app:backgroundTint="#254c7b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_phieu"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-1dp" />
+    <Button
+        android:id="@+id/btn_huy31"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hủy"
+        app:backgroundTint="#254c7b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_ht31"
+        app:layout_constraintTop_toBottomOf="@+id/cons_phieu"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
