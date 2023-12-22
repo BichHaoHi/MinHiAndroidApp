@@ -27,6 +27,11 @@ public class QLSPAdapter extends RecyclerView.Adapter<QLSPAdapter.MyViewHolder> 
         this.context = context;
         this.listProduct = listProduct;
     }
+    public void setFilterList(Context context, List<Pair<String, Product>> filtedList){
+        this.context = context;
+        this.listProduct = filtedList;
+        notifyDataSetChanged();
+    }
 
     public void setClickListener(ItemClick itemClick){
         this.itemClick = itemClick;

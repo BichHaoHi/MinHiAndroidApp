@@ -15,6 +15,7 @@ import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.projecthk1_2023_2024.Admin.activityuser.UserDetailActivity;
@@ -31,6 +32,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +40,8 @@ public class NewImpActivity extends AppCompatActivity implements ItemClick{
     Context context;
     RecyclerView recyclerView;
     ImageView back;
+    SearchView search;
+    ListImp1Adapter adapter;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     CollectionReference importBatchRef = db.collection("ImportBatch");
@@ -84,7 +88,48 @@ public class NewImpActivity extends AppCompatActivity implements ItemClick{
                             }
                         }
                     }
+        });
 
+        ///
+        search = findViewById(R.id.searchPNnew);
+        search.clearFocus();
+        recyclerView.setHasFixedSize(true);
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterList(newText);
+                return true;
+            }
+
+            private void filterList(String text) {
+                List<Pair<String, ImportBatch>> filtedList = new ArrayList<>();
+                String searchTextWithoutDiacritics = removeDiacritics(text.toLowerCase());
+                for(Pair<String, ImportBatch> product: listNewImpBatch){
+                    if(removeDiacritics(product.second.getSupplier().toLowerCase()).contains(searchTextWithoutDiacritics)
+                            ||
+                            removeDiacritics(product.first).equals(searchTextWithoutDiacritics)
+                    ){
+                        filtedList.add(product);
+                    }
+
+                }
+                if(filtedList.isEmpty() == true && text.isEmpty() == false){
+                    adapter.setFilterList(NewImpActivity.this, new ArrayList<>());
+                }
+                else {
+                    adapter.setFilterList(NewImpActivity.this, filtedList);
+                }
+            }
+
+            public String removeDiacritics(String input) {
+                String normalized = Normalizer.normalize(input, Normalizer.Form.NFD);
+                return normalized.replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+            }
         });
 
 

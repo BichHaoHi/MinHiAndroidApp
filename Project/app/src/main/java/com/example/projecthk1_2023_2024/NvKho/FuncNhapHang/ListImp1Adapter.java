@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.projecthk1_2023_2024.R;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 import com.example.projecthk1_2023_2024.model.ImportBatch;
+import com.example.projecthk1_2023_2024.model.Product;
 
 import java.util.List;
 
@@ -23,6 +24,11 @@ public class ListImp1Adapter extends RecyclerView.Adapter<ListImp1Adapter.MyView
     public ListImp1Adapter(Context context, List<Pair<String, ImportBatch>> listNewExp) {
         this.context = context;
         this.listImp = listNewExp;
+    }
+    public void setFilterList(Context context, List<Pair<String, ImportBatch>> filtedList){
+        this.context = context;
+        this.listImp = filtedList;
+        notifyDataSetChanged();
     }
 
     public void setClickListener(ItemClick itemClick){

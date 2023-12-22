@@ -15,21 +15,24 @@ import com.example.projecthk1_2023_2024.Util.ViewModel.VMDetailNewImp;
 import com.example.projecthk1_2023_2024.Admin.clickhandler.ItemClick;
 
 import java.util.List;
+import java.util.Map;
 
 public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapter.MyViewHolder>  {
     Context context;
-    ItemClick itemClick;
-    private List<VMDetailNewImp> listDetail;
-    Button btnHT, btnHuy;
+    //ItemClick itemClick;
+    private List<Map<String, Object>> listDataProBatch;
+    private List<Map<String, Object>> listDataProduct;
 
-    public DetailNewImpAdapter(Context context, List<VMDetailNewImp> listDetail) {
-        this.context = context;
-        this.listDetail = listDetail;
+    // Constructor để nhận dữ liệu từ Activity/Fragment
+    public DetailNewImpAdapter(List<Map<String, Object>> dataListMain, List<Map<String, Object>> dataListSub) {
+
+        this.listDataProBatch = dataListMain;
+        this.listDataProduct = dataListSub;
     }
 
-    public void setClickListener(ItemClick itemClick){
-        this.itemClick = itemClick;
-    }
+//    public void setClickListener(ItemClick itemClick){
+//        this.itemClick = itemClick;
+//    }
 
     @NonNull
     @Override
@@ -41,18 +44,25 @@ public class DetailNewImpAdapter extends RecyclerView.Adapter<DetailNewImpAdapte
 
     @Override
     public void onBindViewHolder(@NonNull DetailNewImpAdapter.MyViewHolder holder, int position) {
-        VMDetailNewImp DetailPair = listDetail.get(position);
-        holder.txtTenSp.setText(DetailPair.getProductPair3().second.getName());
-        holder.txtSlt.setText(DetailPair.getProductPair3().second.getQuantity());
-        holder.txtSln.setText(DetailPair.getImportPair3().second.getQuantity_import());
-        holder.txtMaLo.setText(DetailPair.getBatchPair3().first);
+        Map<String, Object> mainData = listDataProBatch.get(position);
+        Map<String, Object> subData = listDataProduct.get(position);
+
+        holder.txtTenSp.setText((String)subData.get("Name"));
+        holder.txtMaLo.setText((String)mainData.get("IDBatch"));
+        holder.txtHsd.setText((String)mainData.get("ExpiryDate"));
+        holder.txtSlt.setText((String)subData.get("Quantity_Valid"));
+        holder.txtSln.setText((String)subData.get("Quantity"));
+        holder.txtGia.setText((String)mainData.get("ImportPrice"));
+
+
 
     }
 
     @Override
     public int getItemCount() {
-        return listDetail.size();
+        return 0;
     }
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView txtTenSp, txtMaLo, txtHsd, txtSlt, txtSln,txtGia;

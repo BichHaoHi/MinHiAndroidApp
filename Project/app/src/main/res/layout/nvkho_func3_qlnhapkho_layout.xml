@@ -47,8 +47,8 @@
 
         <ImageView
             android:id="@+id/seach"
-            android:layout_width="299dp"
-            android:layout_height="47dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/seach"
             android:paddingLeft="0dp"
@@ -61,29 +61,20 @@
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints,NotSibling" />
 
-        <ImageView
-            android:id="@+id/ic_search"
-            android:layout_width="29dp"
-            android:layout_height="27dp"
-            android:src="@drawable/ic_search"
+
+
+        <SearchView
+            android:id="@+id/searchPN"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="9dp"
+            android:iconifiedByDefault="false"
             app:layout_constraintBottom_toBottomOf="@+id/seach"
             app:layout_constraintEnd_toEndOf="@+id/seach"
-            app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toStartOf="@+id/seach"
             app:layout_constraintTop_toTopOf="@+id/seach"
-            app:layout_constraintVertical_bias="0.423"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/func_search"
-            android:layout_width="218dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Search"
-            app:layout_constraintBottom_toBottomOf="@+id/seach"
-            app:layout_constraintEnd_toEndOf="@+id/seach"
-            tools:ignore="MissingConstraints" />
+            android:queryHint="Search"
+            android:outlineAmbientShadowColor="@color/white"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -114,9 +105,8 @@
             android:id="@+id/btnNewImp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="48dp"
             android:background="@drawable/button_bottom"
             android:contentDescription="add_user"
             android:src="@drawable/ic_new"

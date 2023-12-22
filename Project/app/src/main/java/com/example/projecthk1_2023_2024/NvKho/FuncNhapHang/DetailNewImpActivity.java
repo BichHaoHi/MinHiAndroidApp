@@ -1,5 +1,9 @@
 package com.example.projecthk1_2023_2024.NvKho.FuncNhapHang;
 
+import static android.content.ContentValues.TAG;
+
+import java.util.HashMap;
+import java.util.Map;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +15,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecthk1_2023_2024.model.ProductBatch;
@@ -35,9 +40,10 @@ public class DetailNewImpActivity extends AppCompatActivity{
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     CollectionReference importBatchRef = db.collection("ImportBatch");
-    CollectionReference productBatchRef = db.collection("ProductBatch");
+    //CollectionReference productBatchRef = db.collection("ProductBatch");
 
-    private List<Pair<String, ImportBatch>> listNewImpBatch = new ArrayList<>();
+    private List<Map<String, Object>> listDataProduct = new ArrayList();
+    private List<Map<String, Object>> listDataProBatch = new ArrayList();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -62,24 +68,51 @@ public class DetailNewImpActivity extends AppCompatActivity{
         }
         else
             Log.d("Lỗi: ", "Không lấy đc idBatch");
-        productBatchRef.whereEqualTo("idBatch", idBatch)
+
+        db.collection("ProductBatch")
+                .whereEqualTo("IDBatch", idBatch)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                ProductBatch productBatch = document.toObject(ProductBatch.class);
+                                // Lấy dữ liệu từ tài liệu chính
+                                String documentId = document.getId();
+                                Map<String, Object> dataProBatch = document.getData();
+                                Log.d(TAG, "Document ID: " + documentId + ", Data: " + dataProBatch);
+                                listDataProBatch.add(dataProBatch);
+                                // Lấy subcollection
+                                CollectionReference subcollectionRef = document.getReference().collection("Product");
+                                subcollectionRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<QuerySnapshot> subcollectionTask) {
+                                        if (subcollectionTask.isSuccessful()) {
+                                            for (QueryDocumentSnapshot subdocument : subcollectionTask.getResult()) {
+                                                // Xử lý từng tài liệu trong subcollection
+                                                String subdocumentId = subdocument.getId();
+                                                Map<String, Object> dataProduct = subdocument.getData();
+                                                listDataProduct.add(dataProduct);
+                                                Log.d(TAG, "Subdocument ID: " + subdocumentId + ", Subdocument Data: " + dataProduct);
 
-                                // Tiếp tục truy vấn Product dựa trên idProduct
-                                String idProduct = productBatch.getIdProduct();
-                                queryProduct(idProduct);
+                                                recyclerView.setLayoutManager(new LinearLayoutManager(DetailNewImpActivity.this));
+                                                DetailNewImpAdapter adapter = new DetailNewImpAdapter(listDataProBatch, listDataProduct);
+                                                recyclerView.setAdapter(adapter);
+//                                                adapter.setClickListener((ItemClick) NewImpActivity.this);
+                                                recyclerView.getAdapter().notifyDataSetChanged();
+                                            }
+                                        } else {
+                                            Log.d(TAG, "Error getting subcollection documents: ", subcollectionTask.getException());
+                                        }
+                                    }
+                                });
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }
                     }
                 });
+
 
     }
 
